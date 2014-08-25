@@ -1,0 +1,96 @@
+
+.isblock {
+    float: left;
+    clear: none;
+}
+
+.floatright {
+    float: right;
+}
+
+#bscontainer {
+    font: 16px/2.5 Tahoma,'\5FAE\8F6F\96C5\9ED1','Microsoft Yahei',"hiragino sans gb", Helvetica, Arial, "\5b8b\4f53", 'sans-serif';
+    color: #333;
+    max-width: 976px;
+    min-width: 960px;
+    margin: 0 auto;
+    background-image: url(http://subtlepatterns.com/patterns/giftly.png);
+    overflow: hidden;
+    clear: both;
+}
+
+#bsheader {
+    display: block;
+    float: left;
+    width: 100%;
+    height: 200px;
+    background-image: url('jicun header.jpg');
+    background-color: #13233b;
+}
+
+h1 {
+    display: block;
+    font-size: 50px;
+    color: #fff;
+    z-index: 1;
+    -webkit-text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
+    text-shadow: 0px 5px 9px rgba(0, 0, 0, 0.6);
+}
+
+.comm {
+    width: 180px;
+    float: left;
+}
+
+    .comm img {
+        width: 80%;
+    }
+
+    .comm span {
+        margin-left: 12px;
+        font-size: 16px;
+        color: #1d5697;
+        z-index: 1;
+        font-weight: bold;
+    }
+
+h3 {
+    font-size: 24px;
+    color: #ed6752;
+    font-weight: 100;
+}
+
+h2 {
+    font-size: 18px;
+    color: #1d5697;
+    z-index: 1;
+}
+
+h4 {
+    font-size: 26px;
+    line-height: 12px;
+    color: #1d5697;
+    font-weight: 200;
+    text-align: center;
+}
+
+#bsmain_content {
+    display: block;
+    width: 100%;
+}
+
+.content_box {
+    display: inline-block;
+    width: 80%;
+    margin-top: 150px;
+    padding-left: 10%;
+    vertical-align: middle;
+}
+
+.step {
+    display: inline-block;
+    font-size: 14px;
+    width: 250px;
+    float: left;
+    clear: none;
+}

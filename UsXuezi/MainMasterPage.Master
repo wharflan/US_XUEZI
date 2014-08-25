@@ -1,0 +1,105 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMasterPage.master.cs" Inherits="UsXuezi.MainMasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title><%: Page.Title %> - UsXuezi</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="Css/UsXueziCss.css" />
+    <link rel="stylesheet" href="Css/SmallUCs.css" />
+    <script type="text/javascript" src="/Script/jquery.js"></script>
+    <script type="text/javascript" src="/Script/jquery-1.11.0.min.js"></script>
+    <script>
+        function KeyDown() {
+            if (event.keyCode == 13) {
+                return false;
+            }
+        }
+    </script>
+    <asp:ContentPlaceHolder ID="HeadHolder" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" onkeydown="return KeyDown()">
+        <asp:ScriptManager ID="ScriptManager1" runat="server"></asp:ScriptManager>
+        <div id="container">
+            <div id="Navigation" style="background-color: white; z-index: 100; height:80px;">
+                <div class="inner_nav group">
+                    <div class="col_65">
+                        <div id="logo" onclick="window.location.href='/default.aspx';">
+                            <a href="/Default.aspx">US学子网</a>
+                        </div>
+
+                        <div id="searchblock">
+                            <button type="submit" class="search-submit">搜索</button>
+                            <asp:TextBox ID="TextBox2" runat="server" placeholder="搜索" autocomplete="off" Width="500px"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div class="col_35" style="margin-top: 8px;">
+
+                        <div id="select_city">
+                            <asp:DropDownList ID="DropDownList1" runat="server" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="True">                                
+                                <asp:ListItem Value="1">波士顿</asp:ListItem>
+                                <asp:ListItem Value="2">纽约</asp:ListItem>
+                                <asp:ListItem Value="3">芝加哥</asp:ListItem>
+                                <asp:ListItem Value="4">洛杉矶</asp:ListItem>
+                                <asp:ListItem Value="5">三藩市</asp:ListItem>
+                            </asp:DropDownList>
+                            <asp:HiddenField ID="HiddenField1" runat="server" />
+                        </div>
+
+                        <script type="text/javascript">
+                            $(document).ready(function () {
+                                $("#publishblock").mouseover(function () {
+                                    $("#publishdiv").stop(true, false);
+                                    $("#publishdiv").fadeIn(speed());
+                                });
+
+                                $("#publishblock").mouseout(function () {
+                                    $("#publishdiv").fadeOut(speed());
+                                });
+
+                                var speed = function () {
+                                    return $.isNumeric($("#tb313").val()) ? parseInt($("#tb313").val()) : 500;
+                                }
+                            });
+                        </script>
+
+                        <div id="publishblock" class="publishblock">
+                            <div style="font-size: 18px; margin: 0; border: none; background-color: #ef4224; color: white; font-weight: 500; padding: 10px 20px;">发布帖子</div>
+                            <div id="publishdiv" class="publishdiv">
+                                <asp:Button ID="Button1" runat="server" Text="房屋转租" CssClass="publishbutton" OnClick="Button1_Click" />
+                                <asp:Button ID="Button2" runat="server" Text="二手市场" CssClass="publishbutton" OnClick="Button2_Click" />
+                                <asp:Button ID="Button3" runat="server" Text="二手车" CssClass="publishbutton" OnClick="Button3_Click" />
+                                <asp:Button ID="Button4" runat="server" Text="房产交易" CssClass="publishbutton" OnClick="Button4_Click" />
+                                <asp:Button ID="Button5" runat="server" Text="美食餐饮" CssClass="publishbutton" OnClick="Button5_Click" />
+                                <asp:Button ID="Button6" runat="server" Text="商家机构" CssClass="publishbutton" OnClick="Button6_Click" />
+                                <asp:Button ID="Button7" runat="server" Text="问答专栏" CssClass="publishbutton" OnClick="Button7_Click" />
+                                <asp:Button ID="Button8" runat="server" Text="吹水吐槽" CssClass="publishbutton" OnClick="Button8_Click" />
+                            </div>
+                        </div>
+
+                        <div id="iflogin" runat="server">
+                            <div id="not_login" class="nav_rightblock" runat="server">
+                                <asp:Button ID="logon" class="log_icon" runat="server" Text="登陆" OnClick="logon_Click" />
+                                <asp:Button ID="register" class="log_icon" runat="server" Text="注册" OnClick="register_Click" />
+                            </div>
+
+                            <div id="infoblock" class="nav_rightblock" runat="server">
+                                <asp:ImageButton ID="sml_profile" class="nav_icon" runat="server" src="/Images/Navigation/用户默认头像_小.png" onmouseover="this.src='/Images/Navigation/用户默认头像_小_hover.png'" onmouseout="this.src='/Images/Navigation/用户默认头像_小.png'" OnClick="sml_profile_Click" />
+                                <asp:ImageButton ID="message_icon" class="nav_icon" runat="server" src="/Images/Navigation/私信.png" onmouseover="this.src='/Images/Navigation/私信_hover.png'" onmouseout="this.src='/Images/Navigation/私信.png'" />
+                                <asp:ImageButton ID="alert_icon" class="nav_icon" runat="server" src="/Images/Navigation/系统消息.png" onmouseover="this.src='/Images/Navigation/系统消息_hover.png'" onmouseout="this.src='/Images/Navigation/系统消息.png'" OnClick="alert_icon_Click" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="maincontent">
+                <asp:ContentPlaceHolder ID="ContentHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

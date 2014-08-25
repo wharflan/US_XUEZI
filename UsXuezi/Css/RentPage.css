@@ -1,0 +1,43 @@
+﻿
+
+
+.rentimg {
+    width: 100%;
+}
+
+    .rentimg .pictures {
+        width: 100%;
+        height: 400px;
+    }
+
+.rentcontent {
+    width: 100%;
+    font: 13px;
+    border: thin;
+}
+
+.rentdiscuss {
+    width: 100%;
+    font: 13px;
+    border: thin;
+}
+
+.rentinfo {
+    width: 100%;
+    font: 13p;
+}
+
+    .rentinfo .mapinfo .map {
+        width: 100%;
+        height: 180px;
+    }
+
+
+.rentcontact {
+    width: 100%;
+}
+
+.rentsimilar {
+    width: 100%;
+}
+

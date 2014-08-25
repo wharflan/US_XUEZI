@@ -1,0 +1,191 @@
+﻿.studentcard_horizon {
+    width: 100%;
+    height: 186px;
+    background-color: #f2f2f2;
+    border: 3px solid #f2f2f2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+    .studentcard_horizon .studentavatar {
+        float: left;
+    }
+
+        .studentcard_horizon .studentavatar .avatar {
+            width: 180px;
+            height: 180px;
+        }
+
+    .studentcard_horizon .studentinfo {
+        margin-left: 200px;
+    }
+
+
+.usercard_horizon {
+    width: 100%;
+    height: 128px;
+    background-color: #f2f2f2;
+    border: 3px solid #f2f2f2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+    .usercard_horizon .useravatar {
+        float: left;
+    }
+
+        .usercard_horizon .useravatar .avatar {
+            width: 119px;
+            height: 119px;
+        }
+
+    .usercard_horizon .userinfo {
+        margin-left: 130px;
+        padding: 6px 0;
+    }
+
+.studentcard_vertical {
+    width: 120px;
+    height: 250px;
+    border: solid;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+    .studentcard_vertical .studentavatar {
+    }
+
+        .studentcard_vertical .studentavatar .avatar {
+            width: 120px;
+            height: 120px;
+        }
+
+    .studentcard_vertical .studentinfo {
+    }
+
+.businesscard_horizon {
+    width: 100%;
+    height: 186px;
+    background-color: #f2f2f2;
+    border: 3px solid #f2f2f2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+    .businesscard_horizon .businessavatar {
+        float: left;
+    }
+
+        .businesscard_horizon .businessavatar .avatar {
+            width: 180px;
+            height: 180px;
+        }
+
+    .businesscard_horizon .businessinfo {
+        margin-left: 200px;
+    }
+
+.businesscard_vertical {
+    width: 120px;
+    height: 250px;
+    border: solid;
+    background-color: lightblue;
+    overflow: hidden;
+}
+
+    .businesscard_vertical .businessavatar {
+    }
+
+.business_vertical .businessavatar .avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.businesscard_vertical .businessinfo {
+}
+
+.replyblock {
+    border-top: medium;
+    border-bottom: medium;
+}
+
+
+.item {
+    width: 32.5%;
+    margin: 0;
+}
+
+.replyblock {
+    border: solid 1px red;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    border-bottom: 3px solid #f2f2f2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+    .replyblock .replyavatar {
+        height: 30px;
+    }
+
+        .replyblock .replyavatar .img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .replyblock .replyavatar span {
+            font-size: 25px;
+            vertical-align: central;
+        }
+
+    .replyblock .replyinfo {
+        margin: 3px 5px;
+    }
+
+    .replyblock .replycontent {
+        margin: 15px 5px;
+    }
+
+    .replyblock .replyfoot {
+        margin: 3px 20px;
+    }
+
+.expand {
+    height: auto;
+}
+
+.linkbutton {
+    margin-left: 5px;
+}
+
+.signatureblock {
+    width: 200px;
+    box-sizing: border-box;
+    margin: 10px 5px;
+    height: 215px;
+    display: inline-block;
+    border: 3px solid #fff;
+    background-color: #fff;
+    word-wrap: break-word;
+}
+
+    .signatureblock img {
+        width: 100%;
+        height: 205px;
+    }
+
+    .signatureblock .signaturename {
+        margin-top: -145px;
+        background-color: #ef4224;
+        min-width: 150px;
+        color: white;
+        padding: 3px 5px;
+    }
+
+.list_tag {
+    margin-top: -45px;
+}

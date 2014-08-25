@@ -1,0 +1,358 @@
+﻿
+menu, ol, ul {
+    list-style: none;
+}
+
+.threeblock {
+    margin-top: 40px;
+}
+
+    .threeblock .leftpanel {
+        width: 150px;
+        float: left;
+        height: 100%;
+        position: fixed;
+    }
+
+    .threeblock .midpanel {
+        width: 640px;
+        margin-left: 180px;
+        display: inline-block;
+    }
+
+
+        .threeblock .midpanel .filter {
+            position: fixed;
+            background-color: white;
+            z-index: 100;
+        }
+
+
+    .threeblock .rightpanel {
+        width: 252px;
+        float: right;
+    }
+
+
+.left_navlist {
+    display: block;
+    clear: both;
+}
+
+.menu_col {
+    padding: 0;
+}
+
+
+ul li a {
+    text-decoration: none;
+}
+
+.list_item {
+    margin-left: 10px;
+    overflow: hidden;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.list_icon {
+    background-size: 35px auto;
+    height: 40px;
+    width: 140px;
+}
+
+.certf_txt {
+    color: #ef4224;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 230px;
+}
+
+.certf_img {
+    background-image: url(/Images/certificated.png);
+    width: 250px;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+.certf_block {
+    height: 300px;
+    background-color: #FFF7BD;
+}
+
+.list_title {
+    margin-left: 60px;
+    line-height: 35px;
+}
+
+.list_icon a {
+    color: #3c5a72;
+}
+
+    .list_icon a:hover, .list_icon a:active {
+        color: #ef4224;
+    }
+
+#hottopic .list_icon {
+    background-image: url(/Images/Navigation/热门话题.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #hottopic .list_icon:hover, #hottopic .list_icon:active {
+        background-image: url(/Images/Navigation/热门话题_hover.png);
+        color: #ef4224;
+    }
+
+#secondhanded .list_icon {
+    background-image: url(/Images/Navigation/二手市场.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #secondhanded .list_icon:hover, #secondhanded .list_icon:active {
+        background-image: url(/Images/Navigation/二手市场_hover.png);
+        color: #ef4224;
+    }
+
+#usedcars .list_icon {
+    background-image: url(/Images/Navigation/二手车.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #usedcars .list_icon:hover, #usedcars .list_icon:active {
+        background-image: url(/Images/Navigation/二手车_hover.png);
+        color: #ef4224;
+    }
+
+#housing_rent .list_icon {
+    background-image: url(/Images/Navigation/房屋租转.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #housing_rent .list_icon:hover, #housing_rent .list_icon:active {
+        background-image: url(/Images/Navigation/房屋租转_hover.png);
+        color: #ef4224;
+    }
+
+#housing_sale .list_icon:hover, #housing_sale .list_icon:active {
+    background-image: url(/Images/Navigation/房产交易_hover.png);
+    color: #ef4224;
+}
+
+#housing_sale .list_icon {
+    background-image: url(/Images/Navigation/房产交易.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+#restaurants .list_icon:hover, #restaurants .list_icon:active {
+    background-image: url(/Images/Navigation/美食餐饮_hover.png);
+    color: #ef4224;
+}
+
+#restaurants .list_icon {
+    background-image: url(/Images/Navigation/美食餐饮.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+#businesses .list_icon:hover, #businesses .list_icon:active {
+    background-image: url(/Images/Navigation/商家机构_hover.png);
+    color: #ef4224;
+}
+
+#businesses .list_icon {
+    background-image: url(/Images/Navigation/商家机构.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+#QnA .list_icon {
+    background-image: url(/Images/Navigation/问答专栏.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #QnA .list_icon:hover, #QnA .list_icon:active {
+        background-image: url(/Images/Navigation/问答专栏_hover.png);
+        color: #ef4224;
+    }
+
+#chitchat .list_icon {
+    background-image: url(/Images/Navigation/吹水吐槽.png);
+    color: #3c5a72;
+    background-repeat: no-repeat;
+}
+
+    #chitchat .list_icon:hover, #chitchat .list_icon:active {
+        background-image: url(/Images/Navigation/吹水吐槽_hover.png);
+        color: #ef4224;
+    }
+
+.more_similar {
+    margin-top: 20px;
+    display: block;
+    clear: both;
+}
+
+
+.citylink {
+    margin-right: 4px;
+}
+
+.threeblock .midpanel .filter {
+    position: relative;
+    z-index: 100;
+    width: 640px;
+}
+
+.filter_top {
+    border-bottom: 2px solid #ef4224;
+}
+
+.inner_filtertop {
+    padding: 6px 0;
+}
+
+
+
+.filter_tab:hover, .filter_tab:active {
+    background-color: #ef4224;
+    color: white;
+}
+
+.filter_tab {
+    background-color: none;
+    padding: 6px 20px;
+    color: #3f3f3f;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.inner_filtertop #LinkButton5 {
+    background-color: #ef4224;
+    padding: 6px 20px;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+.filter_content {
+    padding: 5px 0;
+    display: inline-block;
+}
+
+
+.filter_item a {
+    font-size: 14px;
+    line-height: 1;
+    padding: 1px 4px;
+    color: #84D4F0;
+    text-decoration: none;
+}
+
+
+.filter_item span {
+    color: #f05827;
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.postcontents {
+}
+
+.postblock {
+    border: double;
+}
+
+.postcontents .block {
+    width: 32.5%;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-top: 10px;
+    height: 280px;
+    border: 3px solid #f2f2f2;
+    background-color: #f2f2f2;
+    word-wrap: break-word;
+}
+
+.postblock.block:hover {
+    border: 3px solid #ef4224;
+}
+
+.postcontents .block .postprice {
+    margin-top: -145px;
+    background-color: #ef4224;
+    min-width: 150px;
+    color: white;
+    padding: 3px 5px;
+}
+
+.postcontents .block .posttitle {
+    padding: 3px;
+    font-weight: bold;
+    height: 21px;
+    overflow: hidden;
+}
+
+
+.postcontents .block .postimg {
+    width: 100%;
+    height: 205px;
+}
+
+
+.postcontents .block .title {
+    height: 50px;
+}
+
+.list_tag {
+    margin-top: -65px;
+}
+
+.postcontents .bar {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #fff;
+    background-color: #fff;
+    display: inline-block;
+    margin-top: 10px;
+    height: 106px;
+    cursor: pointer;
+}
+
+
+
+    .postcontents .bar:hover {
+        border: 3px solid #ef4224;
+    }
+
+    .postcontents .bar .postprice {
+        background-color: #ef4224;
+        min-width: 150px;
+        color: white;
+        padding: 3px 5px;
+    }
+
+    .postcontents .bar .postimg {
+        width: 100px;
+        height: 100px;
+        float: left;
+        display: inline-block;
+    }
+
+    .postcontents .bar .posttitle {
+        vertical-align: top;
+        margin-left: 15px;
+        font-weight: bold;
+    }
+
+    .postcontents .bar .title {
+        font: 16px;
+    }

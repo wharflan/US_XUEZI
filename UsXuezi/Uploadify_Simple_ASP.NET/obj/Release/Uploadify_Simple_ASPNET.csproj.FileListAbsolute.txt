@@ -1,0 +1,9 @@
+F:\技术\dome\asp.net\自定义控件\uploadify_Simple_ASP.NET\Source and Samples\Uploadify_Simple_ASP.NET\bin\Release\Uploadify_Simple_ASPNET.dll
+F:\技术\dome\asp.net\自定义控件\uploadify_Simple_ASP.NET\Source and Samples\Uploadify_Simple_ASP.NET\bin\Release\Uploadify_Simple_ASPNET.pdb
+F:\技术\dome\asp.net\自定义控件\uploadify_Simple_ASP.NET\Source and Samples\Uploadify_Simple_ASP.NET\obj\Release\Uploadify_Simple_ASPNET.dll
+F:\技术\dome\asp.net\自定义控件\uploadify_Simple_ASP.NET\Source and Samples\Uploadify_Simple_ASP.NET\obj\Release\Uploadify_Simple_ASPNET.pdb
+C:\Users\Lance\Desktop\SourceAndSamples\Source and Samples\Uploadify_Simple_ASP.NET\obj\Release\Uploadify_Simple_ASPNET.csprojResolveAssemblyReference.cache
+C:\Users\Lance\Desktop\SourceAndSamples\Source and Samples\Uploadify_Simple_ASP.NET\obj\Release\Uploadify_Simple_ASPNET.dll
+C:\Users\Lance\Desktop\SourceAndSamples\Source and Samples\Uploadify_Simple_ASP.NET\obj\Release\Uploadify_Simple_ASPNET.pdb
+C:\Users\Lance\Desktop\SourceAndSamples\Source and Samples\Uploadify_Simple_ASP.NET\bin\Release\Uploadify_Simple_ASPNET.dll
+C:\Users\Lance\Desktop\SourceAndSamples\Source and Samples\Uploadify_Simple_ASP.NET\bin\Release\Uploadify_Simple_ASPNET.pdb

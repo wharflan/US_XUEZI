@@ -1,0 +1,62 @@
+﻿
+
+
+.rentimg {
+    width: 100%;
+}
+
+    .rentimg .pictures {
+        width: 100%;
+        height: 400px;
+    }
+
+.rentcontent {
+    width: 100%;
+    font: 13px;
+    border: thin;
+}
+
+.rentdiscuss {
+    width: 100%;
+    font: 13px;
+    border: thin;
+}
+
+.rentinfo {
+    width: 100%;
+    font: 13p;
+}
+
+    .rentinfo .mapinfo .map {
+        width: 100%;
+        height: 180px;
+    }
+
+
+.rentcontact {
+    width: 100%;
+}
+
+.rentsimilar {
+    width: 100%;
+}
+
+
+.big_price_tag {
+    box-sizing: border-box;
+    border: 2px solid #ef4224;
+    background-color: white;
+    padding: 10px 20px;
+    color: #ef4224;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-block;
+    position: absolute;
+    min-width: 109px;
+    margin-top: -100px;
+    text-align: center;
+    margin-left: -680px;
+    z-index: 3000000000;
+}
+
+    
