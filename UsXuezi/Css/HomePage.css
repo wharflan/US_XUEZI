@@ -1,47 +1,110 @@
-﻿
-.cityicons {
+﻿/* common */
+.ilb {display: inline-block;*display: inline;*zoom:1;}
+
+/* city-catalog */
+.city-catalog .m-hd {overflow: hidden;margin-bottom: 20px;}
+.city-catalog .m-hd .text-l {float: left;}
+.city-catalog .m-hd .text-r {float: right;}
+
+.cities {position: relative;*zoom:1;}
+.cities .city {float: left;text-align: center;padding-bottom: 20px;margin-right: 10px;}
+.cities .city .icon {
+    display: block;
+    border-radius: 50%;
+    border: 3px solid #BEBBBB;
+    width: 95px;
+    height: 94px;
+    padding: 20px;
+    margin-bottom: 15px;
 }
 
-    .cityicons .cityicon {
-        width: 156px;
-        margin-top: 30px;
-        display: inline-block;
-        float: left;
-    }
+.cities .city .name {
+    font: bold 18px "Microsoft Yahei",Helvetica,Arial,sans-serif;
+    color: #EF4224;
+    position: relative;
+    *zoom: 1;
+}
+.cities .city .name:before {
+    position: absolute;
+    content: "";
+    display: none;
+    top: 100%;
+    left: 60px;
+    border: 10px solid transparent;
+    border-bottom-color: #EF4224;
+}
+.cities .info-list {
+    display: none;
+    position: absolute;
+    top:100%;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    transition:opacity .2s linear 0s;
+}
+.cities .info-list li {float: left;margin-right: 5px;}
+.cities .info-list a {
+    display: block;
+    font: 18px "Microsoft Yahei",Helvetica,Arial,sans-serif;
+    padding: 5px 15px;
+    background-color: #f2f2f2;
+}
 
+.cities .boston .icon {background: url(../Images/CityIcon/boston.png) center center no-repeat;}
+.cities .boston:hover .icon {background: url(../Images/CityIcon/boston_hover.png) center center no-repeat;}
+.cities .newYork .icon {background: url(../Images/CityIcon/newYork.png) center center no-repeat;}
+.cities .newYork:hover .icon {background: url(../Images/CityIcon/newYork_hover.png) center center no-repeat;}
+.cities .chicago .icon {background: url(../Images/CityIcon/chicago.png) center center no-repeat;}
+.cities .chicago:hover .icon {background: url(../Images/CityIcon/chicago_hover.png) center center no-repeat;}
+.cities .la .icon {background: url(../Images/CityIcon/la.png) center center no-repeat;}
+.cities .la:hover .icon {background: url(../Images/CityIcon/la_hover.png) center center no-repeat;}
+.cities .sfo .icon {background: url(../Images/CityIcon/sfo.png) center center no-repeat;}
+.cities .sfo:hover .icon {background: url(../Images/CityIcon/sfo_hover.png) center center no-repeat;}
 
-        .cityicons .cityicon .image {
-            background-repeat: no-repeat;
-            width: 96px;
-            background-position: 20px;
-            background-color: white;
-            border-radius: 50%;
-            border: solid;
-            border-color: #bebbbb;
-            padding: 20px;
-        }
+.cities .city:hover .icon {background-color: #ef4224;}
+.cities .city:hover .info-list {display:block;}
+.cities .city:hover .name:before {display: block;}
 
-            .cityicons .cityicon .image:hover {
-                background-color: #ef4224;
-            }
+.cities .city:nth-child(1) .info-list {padding-left: 0;}
+.cities .city:nth-child(2) .info-list {padding-left: 100px;}
+.cities .city:nth-child(3) .info-list {padding-left: 150px;}
+.cities .city:nth-child(4) .info-list {padding-left: 200px;}
+.cities .city:nth-child(5) .info-list {padding-left: 300px;}
 
-        .cityicons .cityicon .name {
-            font: 18px 'Microsoft Yahei',Helvetica,Arial,sans-serif;
-            color: #ef4224;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 15px;
-            width: 126px;
-            text-align: center;
-        }
+.cities .moreCity {
+    height: 94px;
+    width: 190px;
+    border-radius: 50%;
+    border:3px solid #BEBBBB;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    font: bold 18px "Microsoft Yahei",Helvetica,Arial,sans-serif;
+    color: #EF4224;
+}
+.cities .moreCity .wrap {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+.cities .moreCity:before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;
+    vertical-align: middle;
+}
+.cities .moreCity:hover {background-color: #ef4224;color: #fff;}
 
-        .cityicons .cityicon .hide {
-            display: none;
-        }
-
-        .cityicons .cityicon .show {
-            display: inline;
-        }
+.cities:after {
+    content:"";
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
 
 .triangle {
     width: 0px;
@@ -59,7 +122,7 @@
 }
 
 
-
+#HotIssues {margin-top: 30px;}
 .hotissueblock {
     display: inline-block;
     width: 49.5%;
@@ -71,39 +134,39 @@
     box-sizing: border-box;
 }
 
-    .hotissueblock .hotissueblock_left {
-        float: left;
-        width: 120px;
-    }
+.hotissueblock .hotissueblock_left {
+    float: left;
+    width: 120px;
+}
 
-        .hotissueblock .hotissueblock_left .issueimg {
-            width: 100%;
-            height: 120px;
-        }
+.hotissueblock .hotissueblock_left .issueimg {
+    width: 100%;
+    height: 120px;
+}
 
 
-    .hotissueblock .hotissueblock_right {
-        padding: 5px;
-        display: inline-block;
-        width: 75%;
-    }
+.hotissueblock .hotissueblock_right {
+    padding: 5px;
+    display: inline-block;
+    width: 75%;
+}
 
-        .hotissueblock .hotissueblock_right .issuetitle {
-            font-size: 20px;
-            font-weight: 600;
-            color: #ef4224;
-        }
+.hotissueblock .hotissueblock_right .issuetitle {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ef4224;
+}
 
-        .hotissueblock .hotissueblock_right .issuecontent {
-        }
+.hotissueblock .hotissueblock_right .issuecontent {
+}
 
-    .hotissueblock .hotissueblock_detail {
-        width: 100%;
-        border: 3px solid #f2f2f2;
-        height: 300px;
-        background-color: antiquewhite;
-        position: relative;
-        z-index: 99;
-        top: 40px;
-        margin-left: -2px;
-    }
+.hotissueblock .hotissueblock_detail {
+    width: 100%;
+    border: 3px solid #f2f2f2;
+    height: 300px;
+    background-color: antiquewhite;
+    position: relative;
+    z-index: 99;
+    top: 40px;
+    margin-left: -2px;
+}
