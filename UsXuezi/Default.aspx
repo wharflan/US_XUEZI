@@ -22,33 +22,78 @@
             }
         });
     </script>
-    <div id="cityicons" class="cityicons blockstyle">
-        <p>
-            <asp:Label ID="Label1" runat="server" Text="选择您所在的城市"></asp:Label>
-        </p>
-
-        <BBS:CityIcon ID="BOSIcon" runat="server" CityName="波士顿" Class="cityicon" />
-        <BBS:CityIcon ID="NYIcon" runat="server" CityName="纽约" Class="cityicon" />
-        <BBS:CityIcon ID="CCGIcon" runat="server" CityName="芝加哥" Class="cityicon" />
-        <BBS:CityIcon ID="LAIcon" runat="server" CityName="洛杉矶" Class="cityicon" />
-        <BBS:CityIcon ID="SFIcon" runat="server" CityName="三藩市" Class="cityicon" />
-
-        <asp:Label ID="Label3" runat="server" Text="zheli"></asp:Label>
-
-        <div class="fix-clear"></div>
-        <div id="plates" class="plates" style="display: none">
-            <asp:Button ID="Button1" runat="server" Text="热门话题" OnClick="Button1_Click" />
-            <asp:Button ID="Button2" runat="server" Text="二手市场" OnClick="Button2_Click" />
-            <asp:Button ID="Button3" runat="server" Text="房屋租转" OnClick="Button3_Click" />
-            <asp:Button ID="Button4" runat="server" Text="房产交易" OnClick="Button4_Click" />
-            <asp:Button ID="Button5" runat="server" Text="美食餐饮" OnClick="Button5_Click" />
-            <asp:Button ID="Button6" runat="server" Text="商家机构" OnClick="Button6_Click" />
-            <asp:Button ID="Button7" runat="server" Text="问答专栏" OnClick="Button7_Click" />
-            <asp:Button ID="Button8" runat="server" Text="吹水吐槽" OnClick="Button8_Click" />
+    <div class="city-catalog blockstyle">
+        <div class="m-hd">
+            <asp:Label ID="Label1" runat="server" Text="选择您所在的城市" Class="text-l"></asp:Label>
+            <asp:Label ID="Label3" runat="server" Text="zheli" Class="text-r"></asp:Label>
+        </div>
+        <div class="m-bd">
+            <div class="cities">
+                <div class="city boston">
+                    <a href="" class="icon"></a>
+                    <p class="name">波士顿</p>
+                    <ul class="info-list">
+                        <li><a href="">热门话题</a></li>
+                        <li><a href="">二手市场</a></li>
+                        <li><a href="">房屋租转</a></li>
+                        <li><a href="">问答专栏</a></li>
+                    </ul>
+                </div>
+                <div class="city newYork">
+                    <a href="" class="icon"></a>
+                    <p class="name">纽约</p>
+                    <ul class="info-list">
+                        <li><a href="">热门话题</a></li>
+                        <li><a href="">二手市场</a></li>
+                        <li><a href="">房屋租转</a></li>
+                        <li><a href="">问答专栏</a></li>
+                        <li><a href="">吹水吐槽</a></li>
+                    </ul>
+                </div>
+                <div class="city chicago">
+                    <a href="" class="icon"></a>
+                    <p class="name">芝加哥</p>
+                    <ul class="info-list">
+                        <li><a href="">热门话题</a></li>
+                        <li><a href="">二手市场</a></li>
+                        <li><a href="">房屋租转</a></li>
+                        <li><a href="">房产交易</a></li>
+                    </ul>
+                </div>
+                <div class="city la">
+                    <a href="" class="icon"></a>
+                    <p class="name">洛杉矶</p>
+                    <ul class="info-list">
+                        <li><a href="">热门话题</a></li>
+                        <li><a href="">二手市场</a></li>
+                        <li><a href="">房屋租转</a></li>
+                        <li><a href="">房产交易</a></li>
+                        <li><a href="">美食餐饮</a></li>
+                        <li><a href="">商家机构</a></li>
+                    </ul>
+                </div>
+                <div class="city sfo">
+                    <a href="" class="icon"></a>
+                    <p class="name">三藩市</p>
+                    <ul class="info-list">
+                        <li><a href="">热门话题</a></li>
+                        <li><a href="">二手市场</a></li>
+                        <li><a href="">房屋租转</a></li>
+                        <li><a href="">房产交易</a></li>
+                        <li><a href="">美食餐饮</a></li>
+                    </ul>
+                </div>
+                <a class="moreCity" href="">
+                    <div class="wrap">
+                        <p>更多城市</p>
+                        <p>Coming Soon</p>
+                    </div>
+                </a>
+            </div>
         </div>
     </div>
 
-    <div id="HotIssues" class="blockstyle">
+    <div id="HotIssues">
         <p>
             <asp:Label ID="Label2" runat="server" Text="热门话题"></asp:Label>
         </p>
