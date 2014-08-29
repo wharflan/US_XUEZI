@@ -37,3 +37,12 @@ D:\haohaolai\UsXuezi0614_shu\UsXuezi0614_shu\UsXuezi\bin\Uploadify_Simple_ASPNET
 D:\haohaolai\UsXuezi0614_shu\UsXuezi0614_shu\UsXuezi\obj\Debug\UsXuezi.dll
 D:\haohaolai\UsXuezi0614_shu\UsXuezi0614_shu\UsXuezi\obj\Debug\UsXuezi.pdb
 D:\haohaolai\UsXuezi0614_shu\UsXuezi0614_shu\UsXuezi\obj\Debug\UsXuezi.csprojResolveAssemblyReference.cache
+D:\Github\US_XUEZI\UsXuezi\bin\UsXuezi.dll
+D:\Github\US_XUEZI\UsXuezi\bin\UsXuezi.pdb
+D:\Github\US_XUEZI\UsXuezi\bin\CKFinder.dll
+D:\Github\US_XUEZI\UsXuezi\bin\Uploadify_Simple_ASPNET.dll
+D:\Github\US_XUEZI\UsXuezi\bin\CKFinder.pdb
+D:\Github\US_XUEZI\UsXuezi\bin\Uploadify_Simple_ASPNET.pdb
+D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.csprojResolveAssemblyReference.cache
+D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.dll
+D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.pdb
