@@ -3,16 +3,17 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="stepname" runat="server">
     <li class="active">
-        <div class="floatleft left_10">基本资料</div>
+        <a href="#firstholder" data-toggle="tab">1. 基本资料</a>
     </li>
     <li>
-        <div class="floatleft left_10">图片上传</div>
+        <a href="#secondholder" data-toggle="tab">2. 图片上传</a>
     </li>
     <li>
-        <div class="floatleft left_10">详细介绍</div>
+        <a href="#thirdholder" data-toggle="tab">3. 详细介绍</a>
     </li>
 </asp:Content>
 
+<asp:Content ID="Content5" ContentPlaceHolderID="publishType" runat="server">房屋转租</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="firstholder" runat="server">
     <div class="sub_heading">
         <asp:Label ID="Label1" runat="server" Style="width: 100%; text-align: left;" Text="*为必填项目"></asp:Label>
