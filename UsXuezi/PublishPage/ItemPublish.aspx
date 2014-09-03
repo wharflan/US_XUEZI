@@ -2,99 +2,91 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="stepname" runat="server">
     <li class="active">
-        <div class="floatleft left_10">基本资料</div>
+        <a href="#firstholder" data-toggle="tab">1. 基本资料</a>
     </li>
     <li>
-        <div class="floatleft left_10">图片上传</div>
+        <a href="#secondholder" data-toggle="tab">2. 图片上传</a>
     </li>
     <li>
-        <div class="floatleft left_10">详细介绍</div>
+        <a href="#thirdholder" data-toggle="tab">3. 详细介绍</a>
     </li>
 </asp:Content>
 
+<asp:Content ID="Content5" ContentPlaceHolderID="publishType" runat="server">二手市场</asp:Content>
+
 <asp:Content ID="Content2" ContentPlaceHolderID="firstholder" runat="server">
-    <div class="sub_heading">
-        <asp:Label ID="Label1" runat="server" Style="width: 100%; text-align: left;" Text="*为必填项目"></asp:Label>
-    </div>
-
-
-    <div class="item floatleft" style="width: 86%;">
-        <asp:Label ID="Label2" runat="server" Text="标题"></asp:Label>
-        <asp:TextBox ID="TextBox1" CssClass="basic-input" placeholder="如“9成新Iphone 包邮出”" Style="width: 81%;" runat="server"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="请输入标题" ControlToValidate="TextBox1"></asp:RequiredFieldValidator>
-
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label15" runat="server" Text="地区"></asp:Label>
-        <asp:DropDownList ID="DropDownList2" Style="width: 262px;" CssClass="basic-input" runat="server">
-            <asp:ListItem Value="1">波士顿</asp:ListItem>
-            <asp:ListItem Value="2">纽约</asp:ListItem>
-            <asp:ListItem Value="3">芝加哥</asp:ListItem>
-            <asp:ListItem Value="4">洛杉矶</asp:ListItem>
-            <asp:ListItem Value="5">三藩市</asp:ListItem>
-        </asp:DropDownList>
-    </div>
-
-    <!--只在列表页作筛选只用，不在内容页显示-->
-    <div class="item floatleft">
-        <asp:Label ID="Label3" runat="server" Text="物品类别"></asp:Label><asp:DropDownList ID="DropDownList1" Style="width: 262px;" CssClass="basic-input" runat="server">
-            <asp:ListItem>衣鞋包饰</asp:ListItem>
-            <asp:ListItem>数码产品</asp:ListItem>
-            <asp:ListItem>家具/家居</asp:ListItem>
-            <asp:ListItem>书籍/影视/音乐</asp:ListItem>
-            <asp:ListItem>美容/保健</asp:ListItem>
-            <asp:ListItem>折扣/会员卡</asp:ListItem>
-            <asp:ListItem>其他</asp:ListItem>
-        </asp:DropDownList>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label16" runat="server" Text="售价"></asp:Label>
-        <asp:TextBox ID="TextBox9" CssClass="basic-input" Width="50px" runat="server"></asp:TextBox>
-        <div class="floatleft" style="margin-left: -30px;">
-            <asp:CheckBox ID="CheckBox3" CssClass="checkbox" runat="server" /><asp:Label ID="Label6" runat="server" Style="float: none;" Text="自取"></asp:Label>
-        </div>
-        <div class="floatleft" style="margin-left: -50px;">
-            <asp:CheckBox ID="CheckBox4" CssClass="checkbox" runat="server" /><asp:Label ID="Label7" runat="server" Style="float: none;" Text="邮寄"></asp:Label>
-        </div>
-        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="价格错误" ValidationExpression="^\+?[1-9][0-9]*$" ControlToValidate="TextBox9" SetFocusOnError="True"></asp:RegularExpressionValidator>
-        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="价格错误" ControlToValidate="TextBox9"></asp:RequiredFieldValidator>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label8" runat="server" Text="新旧程度"></asp:Label>
-        <asp:DropDownList ID="DropDownList3" Style="width: 262px;" CssClass="basic-input" runat="server">
-            <asp:ListItem>全新</asp:ListItem>
-            <asp:ListItem>99新</asp:ListItem>
-            <asp:ListItem>95新</asp:ListItem>
-            <asp:ListItem>9新</asp:ListItem>
-            <asp:ListItem>8新</asp:ListItem>
-            <asp:ListItem>7新</asp:ListItem>
-        </asp:DropDownList>
-    </div>
-
-    <div class="fix-clear"></div>
-    <div class="item floatleft">
-        <asp:Label ID="Label9" runat="server" Text="电话"></asp:Label>
-        <asp:TextBox ID="TextBox2" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label10" runat="server" Text="微信"></asp:Label>
-        <asp:TextBox ID="TextBox4" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-
-    <div class="item floatleft">
-        <asp:Label ID="Label17" runat="server" Text="QQ"></asp:Label>
-        <asp:TextBox ID="TextBox14" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label14" runat="server" Text="邮箱"></asp:Label>
-        <asp:TextBox ID="TextBox5" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
+    <div style="color:#f00;">* 为必填项目</div>
+    <table class="table table-1" style="width:800px;">
+        <tbody>
+            <tr>
+                <th width="80">标题</th>
+                <td colspan="3"><input class="input" placeholder="" style="width:621px;" type="text"></td>
+            </tr>
+            <tr>
+                <th width="80">城市</th>
+                <td width="260">
+                    <select name="" id="" style="width:234px;">
+                        <option value="">波士顿</option>
+                        <option value="">纽约</option>
+                        <option value="">芝加哥</option>
+                        <option value="">洛杉矶</option>
+                        <option value="">三藩市</option>
+                    </select>
+                </td>
+                <th width="80">地区</th>
+                <td width="260">
+                    <select name="" id="" style="width:234px;">
+                        <option value="">Downtown</option>
+                        <option value="">Cambridge</option>
+                        <option value="">Malden</option>
+                        <option value="">Quincy</option>
+                        <option value="">Allston/Brighton</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">物品类别</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+                <th width="80">新旧程度</th>
+                <td width="260">
+                    <select name="" id="">
+                        <option value="">全新</option>
+                        <option value="">99新</option>
+                        <option value="">95新</option>
+                        <option value="">9新</option>
+                        <option value="">8新</option>
+                        <option value="">7新</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">售价</th>
+                <td colspan="3" width="260">
+                    <input type="text" class="input input-s">
+                    <label for=""><input type="checkbox" name="" id="">邮寄</label>
+                    <label for=""><input type="checkbox" name="" id="">自取</label>
+                    <span style="color:#f00;">价格错误</span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div><span style="color:#f00;">* </span>联系方式<span style="color:#f33;">（至少填写一项）</span></div>
+    <table class="table table-1" style="width:800px;">
+        <tbody>
+            <tr>
+                <th width="80">电话</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+                <th width="80">微信</th>
+                <td><input type="text" class="input input-m"></td>
+            </tr>
+            <tr>
+                <th width="80">QQ</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+                <th width="80">邮箱</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+            </tr>
+        </tbody>
+    </table>
 
     <input type="button" name="next" class="next red_button floatright" value="下一步" />
 

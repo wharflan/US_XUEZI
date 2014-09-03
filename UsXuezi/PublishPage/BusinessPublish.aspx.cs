@@ -28,41 +28,41 @@ namespace UsXuezi.PublishPage
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            Label1.Text = "";
+            //Label1.Text = "";
 
-            Button6.Attributes.Add("onclick", "this.form.target='_blank'");
-            Button3.Attributes.Add("onclick", "this.form.target=''");
+            //Button6.Attributes.Add("onclick", "this.form.target='_blank'");
+            //Button3.Attributes.Add("onclick", "this.form.target=''");
 
-            Maticsoft.BLL.Tb_User bu = new Maticsoft.BLL.Tb_User();
-            Maticsoft.Model.Tb_User mu = bu.GetModel(int.Parse(cookieUser.Value));
-            if (mu.User_Type != 1 && mu.User_Type != 5 && mu.User_Type != 4)
-            {
-                EFun.Redirect_Webconfig("Error");
-            }
+            //Maticsoft.BLL.Tb_User bu = new Maticsoft.BLL.Tb_User();
+            //Maticsoft.Model.Tb_User mu = bu.GetModel(int.Parse(cookieUser.Value));
+            //if (mu.User_Type != 1 && mu.User_Type != 5 && mu.User_Type != 4)
+            //{
+            //    EFun.Redirect_Webconfig("Error");
+            //}
 
-            if (!IsPostBack)
-            {
-                //Edit Mode
-                if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
-                {
-                    if (Request.QueryString["method"] == "Edit")
-                    {
-                        int postid = int.Parse(Request.QueryString["id"]);
-                        mp = bp.GetModel(postid);
-                        if (cookieUser.Value != mp.Post_UserID.ToString())
-                        {
-                            EFun.Redirect_Webconfig("404");
-                        }
-                        mps = bps.GetModel(postid);
-                        mls = bs.GetModelList("Signature_BusinessID = " + postid);
-                        fillblank();
-                    }
-                }
-                else
-                {
-                    //Publish Mode        
-                }
-            }
+            //if (!IsPostBack)
+            //{
+            //    //Edit Mode
+            //    if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
+            //    {
+            //        if (Request.QueryString["method"] == "Edit")
+            //        {
+            //            int postid = int.Parse(Request.QueryString["id"]);
+            //            mp = bp.GetModel(postid);
+            //            if (cookieUser.Value != mp.Post_UserID.ToString())
+            //            {
+            //                EFun.Redirect_Webconfig("404");
+            //            }
+            //            mps = bps.GetModel(postid);
+            //            mls = bs.GetModelList("Signature_BusinessID = " + postid);
+            //            fillblank();
+            //        }
+            //    }
+            //    else
+            //    {
+            //        //Publish Mode        
+            //    }
+            //}
         }
 
 

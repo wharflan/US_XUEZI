@@ -28,36 +28,36 @@ namespace UsXuezi.PublishPage
         }
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            Label1.Text = "";
-            Button6.Attributes.Add("onclick", "this.form.target='_blank'");
-            Button3.Attributes.Add("onclick", "this.form.target=''");
-            mu = bu.GetModel(int.Parse(cookieUser.Value));
+            //Label1.Text = "";
+            //Button6.Attributes.Add("onclick", "this.form.target='_blank'");
+            //Button3.Attributes.Add("onclick", "this.form.target=''");
+            //mu = bu.GetModel(int.Parse(cookieUser.Value));
 
-            if (!IsPostBack)
-            {
-                //Edit Mode
-                if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
-                {
-                    if (Request.QueryString["method"] == "Edit")
-                    {
-                        int postid = int.Parse(Request.QueryString["id"]);
-                        mp = bp.GetModel(postid);
-                        if (!EFun.VerifyUser(mp.Post_UserID.ToString()))
-                        {
-                            EFun.Redirect_Webconfig("404");
-                        }
-                        List<Maticsoft.Model.Tb_PostItem> temp = bpi.GetModelList("Item_Post_ID=" + postid);
-                        mpi = temp[0];
+            //if (!IsPostBack)
+            //{
+            //    //Edit Mode
+            //    if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
+            //    {
+            //        if (Request.QueryString["method"] == "Edit")
+            //        {
+            //            int postid = int.Parse(Request.QueryString["id"]);
+            //            mp = bp.GetModel(postid);
+            //            if (!EFun.VerifyUser(mp.Post_UserID.ToString()))
+            //            {
+            //                EFun.Redirect_Webconfig("404");
+            //            }
+            //            List<Maticsoft.Model.Tb_PostItem> temp = bpi.GetModelList("Item_Post_ID=" + postid);
+            //            mpi = temp[0];
 
-                        fillpage(1);
-                    }
-                }
-                else
-                {
-                    //Publish Mode 
-                    fillpage(0);
-                }
-            }
+            //            fillpage(1);
+            //        }
+            //    }
+            //    else
+            //    {
+            //        //Publish Mode 
+            //        fillpage(0);
+            //    }
+            //}
         }
 
 
