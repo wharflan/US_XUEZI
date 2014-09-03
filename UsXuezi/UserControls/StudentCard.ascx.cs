@@ -100,8 +100,8 @@ namespace UsXuezi.UserControls
         protected void buildlongbar()
         {
             Card.Controls.Remove(shortbar);
-            Image1.ImageUrl = "/Uploads/Image/User/" + student.User_ID + ".jpg";
-            Image1.PostBackUrl = "/Person.aspx?id=" + student.User_ID;
+            //Image1.ImageUrl = "/Uploads/Image/User/" + student.User_ID + ".jpg";
+            //Image1.PostBackUrl = "/Person.aspx?id=" + student.User_ID;
             Label4.Text = "新生";
             Label1.Text = student.User_UserName;
             Label6.Text = student.User_Description;
@@ -124,7 +124,6 @@ namespace UsXuezi.UserControls
                 }
                 else
                 {
-                    Button1.Text = "个人备忘";
                     Button2.Text = "编辑信息";
                 }
             }

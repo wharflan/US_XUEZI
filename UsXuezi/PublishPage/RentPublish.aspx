@@ -3,103 +3,90 @@
 
 <asp:Content ID="Content1" ContentPlaceHolderID="stepname" runat="server">
     <li class="active">
-        <div class="floatleft left_10">基本资料</div>
+        <a href="#firstholder" data-toggle="tab">1. 基本资料</a>
     </li>
     <li>
-        <div class="floatleft left_10">图片上传</div>
+        <a href="#secondholder" data-toggle="tab">2. 图片上传</a>
     </li>
     <li>
-        <div class="floatleft left_10">详细介绍</div>
+        <a href="#thirdholder" data-toggle="tab">3. 详细介绍</a>
     </li>
 </asp:Content>
 
+<asp:Content ID="Content5" ContentPlaceHolderID="publishType" runat="server">房屋转租</asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="firstholder" runat="server">
     <div class="sub_heading">
         <asp:Label ID="Label1" runat="server" Style="width: 100%; text-align: left;" Text="*为必填项目"></asp:Label>
     </div>
 
+    <table class="table table-1" style="width:800px;">
+        <tbody>
+            <tr>
+                <th width="80">标题</th>
+                <td colspan="3"><input type="text" class="input" placeholder="如“Brookline两室两卫征室友一枚”" style="width:621px;"></td>
+            </tr>
+            <tr>
+                <th width="80">城市</th>
+                <td width="260">
+                    <select name="" id="" style="width:234px;">
+                        <option value="">波士顿</option>
+                        <option value="">纽约</option>
+                        <option value="">芝加哥</option>
+                        <option value="">洛杉矶</option>
+                        <option value="">三藩市</option>
+                    </select>
+                </td>
+                <th width="80">地区</th>
+                <td width="260">
+                    <select name="" id="" style="width:234px;">
+                        <option value="">Downtown</option>
+                        <option value="">Downtown</option>
+                        <option value="">Downtown</option>
+                        <option value="">Downtown</option>
+                        <option value="">Downtown</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th width="80">月租</th>
+                <td width="260">
+                    <input type="text" class="input input-s">
+                    <label><input type="checkbox">单间</label>
+                    <label><input type="checkbox">整套</label>
+                </td>
+                <th width="80">租期</th>
+                <td width="260">
+                    <input type="text" class="input input-s datepicker">
+                    <span>至</span>
+                    <input type="text" class="input input-s datepicker">
+                </td>
+            </tr>
+            <tr>
+                <th width="80">电话</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+                <th width="80">微信</th>
+                <td><input type="text" class="input input-m"></td>
+            </tr>
+            <tr>
+                <th width="80">QQ</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+                <th width="80">邮箱</th>
+                <td width="260"><input type="text" class="input input-m"></td>
+            </tr>
+        </tbody>
+    </table>
 
-    <div class="item floatleft" style="width: 87%;">
-        <asp:Label ID="Label2" runat="server" Text="标题"></asp:Label><asp:TextBox ID="TextBox9" placeholder="如“Brookline两室两卫征室友一枚”" Width="80%" CssClass="basic-input" runat="server"></asp:TextBox>
-
-    </div>
-    <asp:UpdatePanel ID="UpdatePanel1" runat="server" ChildrenAsTriggers="False" UpdateMode="Conditional">
-        <ContentTemplate>
-            <div class="item floatleft">
-                <asp:Label ID="Label15" runat="server" Text="城市"></asp:Label>
-                <asp:DropDownList ID="DropDownList4" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged" Style="width: 262px;" CssClass="basic-input" runat="server" AutoPostBack="True">
-                    <asp:ListItem Value="1">波士顿</asp:ListItem>
-                    <asp:ListItem Value="2">纽约</asp:ListItem>
-                    <asp:ListItem Value="3">芝加哥</asp:ListItem>
-                    <asp:ListItem Value="4">洛杉矶</asp:ListItem>
-                    <asp:ListItem Value="5">三藩市</asp:ListItem>
-                </asp:DropDownList>
-            </div>
-
-            <div class="item floatleft">
-                <asp:Label ID="Label3" runat="server" Text="地区"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" Style="width: 262px;" CssClass="basic-input" runat="server">
-                </asp:DropDownList>
-            </div>
-        </ContentTemplate>
-        <Triggers>
-            <asp:AsyncPostBackTrigger ControlID="DropDownList4" />
-        </Triggers>
-    </asp:UpdatePanel>
-
-
-    <div class="item floatleft">
-        <asp:Label ID="Label8" runat="server" Text="月租"></asp:Label>
-        <asp:TextBox ID="TextBox3" CssClass="basic-input" Width="100px" runat="server"></asp:TextBox>
-        <div class="floatleft" style="margin-left: -30px;">
-            <asp:CheckBox ID="CheckBox6" CssClass="checkbox" runat="server" />
-            <asp:Label ID="Label17" runat="server" Style="float: none;" Text="单间"></asp:Label>
-        </div>
-        <div class="floatleft" style="margin-left: -45px;">
-            <asp:CheckBox ID="CheckBox7" CssClass="checkbox" runat="server" /><asp:Label ID="Label22" runat="server" Style="float: none;" Text="整套"></asp:Label>
-        </div>
-    </div>
-
+    <input type="button" name="next" class="next red_button floatright" value="下一步" />
     <script>
         $(function () {
-            $("#<%=TextBox1.ClientID%>").datepicker();
+            $(".datepicker").datepicker();
         });
         $(function () {
-            $("#<%=TextBox10.ClientID%>").datepicker();
+            $(".datepicker").datepicker();
         });
     </script>
     <link rel="stylesheet" href="/Script/jquery.custom/jquery-ui.css">
     <script src="/Script/jquery.custom/jquery-ui.js"></script>
-
-
-
-    <div class="item floatleft">
-        <div class="floatleft">
-            <asp:Label ID="Label6" runat="server" Text="租期"></asp:Label>
-            <asp:TextBox ID="TextBox1" CssClass="short-input"  runat="server"></asp:TextBox>至
-            <asp:TextBox ID="TextBox10" CssClass="short-input" runat="server"></asp:TextBox>
-        </div>
-    </div>
-
-
-
-    <div class="item floatleft">
-        <asp:Label ID="Label11" runat="server" Text="电话"></asp:Label><asp:TextBox ID="TextBox4" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label16" runat="server" Text="微信"></asp:Label><asp:TextBox ID="TextBox6" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label18" runat="server" Text="QQ"></asp:Label><asp:TextBox ID="TextBox14" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <div class="item floatleft">
-        <asp:Label ID="Label19" runat="server" Text="邮箱"></asp:Label><asp:TextBox ID="TextBox15" CssClass="basic-input" runat="server"></asp:TextBox>
-    </div>
-
-    <input type="button" name="next" class="next red_button floatright" value="下一步" />
 
 </asp:Content>
 
@@ -134,7 +121,7 @@
 
     <div class="col_49 floatright">
         <div class="floatleft expand">
-            <asp:Label ID="Label20" runat="server" Style="text-align: left; width: auto;" CssClass="sub_heading" Text="地址"></asp:Label>
+            <asp:Label ID="Label20" runat="server" Style="text-align: left; width: auto;float:left;" CssClass="sub_heading" Text="地址"></asp:Label>
             <asp:TextBox ID="TextBox5" class="basic-input" Style="width: 260px;" runat="server"></asp:TextBox>
             <asp:Button ID="Button7" runat="server" Text="Search" CssClass="border_button" OnClick="Button7_Click" />
         </div>

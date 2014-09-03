@@ -65,48 +65,48 @@ namespace UsXuezi.PublishPage
         protected void fillpage(int type)
         {
 
-            DropDownList4.SelectedValue = cookieCity.Value;
-            if (type == 1)
-            {
-                DropDownList4.SelectedValue = mp.Post_CityID.ToString();
-            }
-            Maticsoft.BLL.Tb_Area ba = new Maticsoft.BLL.Tb_Area();
-            List<Maticsoft.Model.Tb_Area> mla = new List<Maticsoft.Model.Tb_Area>();
-            mla = ba.GetModelList("Area_CityID=" + DropDownList4.SelectedValue);
-            DropDownList1.Items.Clear();
-            foreach (Maticsoft.Model.Tb_Area ma in mla)
-            {
-                ListItem li = new ListItem();
-                li.Text = ma.Area_Name;
-                li.Value = ma.Area_ID.ToString();
-                DropDownList1.Items.Add(li);
-            }
-            if (type == 1)
-            {
+            //DropDownList4.SelectedValue = cookieCity.Value;
+            //if (type == 1)
+            //{
+            //    DropDownList4.SelectedValue = mp.Post_CityID.ToString();
+            //}
+            //Maticsoft.BLL.Tb_Area ba = new Maticsoft.BLL.Tb_Area();
+            //List<Maticsoft.Model.Tb_Area> mla = new List<Maticsoft.Model.Tb_Area>();
+            //mla = ba.GetModelList("Area_CityID=" + DropDownList4.SelectedValue);
+            //DropDownList1.Items.Clear();
+            //foreach (Maticsoft.Model.Tb_Area ma in mla)
+            //{
+            //    ListItem li = new ListItem();
+            //    li.Text = ma.Area_Name;
+            //    li.Value = ma.Area_ID.ToString();
+            //    DropDownList1.Items.Add(li);
+            //}
+            //if (type == 1)
+            //{
 
-                TextBox9.Text = mp.Post_Title;
-                TextBox3.Text = mpr.Rent_Price.ToString();
-                if (mpr.Rent_IsSingleRoom == 1)
-                    CheckBox6.Checked = true;
-                if (mpr.Rent_IsWholeBuilding == 1)
-                    CheckBox7.Checked = true;
-                TextBox1.Text = mpr.Rent_Start.ToString();
-                TextBox10.Text = mpr.Rent_End.ToString();
-                TextBox5.Text = mpr.Rent_Address;
-                DropDownList1.SelectedValue = mpr.Rent_Area.ToString();
-                DropDownList2.SelectedValue = mpr.Rent_Pat;
-                DropDownList3.SelectedValue = mpr.Rent_Furniture;
-                if (mpr.Rent_StreetPark == 1)
-                    CheckBox1.Checked = true;
-                if (mpr.Rent_Garage == 1)
-                    CheckBox2.Checked = true;
-                MultiPics1.SetPic(mpr.Rent_Images);
-                Editor1.SetContent(mpr.Rent_Description);
-                TextBox4.Text = mpr.Rent_Phone;
-                TextBox6.Text = mpr.Rent_Wechat;
-                TextBox14.Text = mpr.Rent_QQ;
-                TextBox15.Text = mpr.Rent_Email;
-            }
+            //    TextBox9.Text = mp.Post_Title;
+            //    TextBox3.Text = mpr.Rent_Price.ToString();
+            //    if (mpr.Rent_IsSingleRoom == 1)
+            //        CheckBox6.Checked = true;
+            //    if (mpr.Rent_IsWholeBuilding == 1)
+            //        CheckBox7.Checked = true;
+            //    TextBox1.Text = mpr.Rent_Start.ToString();
+            //    TextBox10.Text = mpr.Rent_End.ToString();
+            //    TextBox5.Text = mpr.Rent_Address;
+            //    DropDownList1.SelectedValue = mpr.Rent_Area.ToString();
+            //    DropDownList2.SelectedValue = mpr.Rent_Pat;
+            //    DropDownList3.SelectedValue = mpr.Rent_Furniture;
+            //    if (mpr.Rent_StreetPark == 1)
+            //        CheckBox1.Checked = true;
+            //    if (mpr.Rent_Garage == 1)
+            //        CheckBox2.Checked = true;
+            //    MultiPics1.SetPic(mpr.Rent_Images);
+            //    Editor1.SetContent(mpr.Rent_Description);
+            //    TextBox4.Text = mpr.Rent_Phone;
+            //    TextBox6.Text = mpr.Rent_Wechat;
+            //    TextBox14.Text = mpr.Rent_QQ;
+            //    TextBox15.Text = mpr.Rent_Email;
+            //}
 
             
 

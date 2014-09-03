@@ -1,0 +1,28 @@
+.studentinfo {margin-bottom: 10px;}
+.studentinfo .studentavatar {box-sizing:border-box;width: 200px;height:100%;border:2px solid #b6b6b6;}
+.studentinfo .studentavatar img {display: block;height: 100%;width: 100%;}
+.studentinfo .indivSignature {font-size: 12px;color: #ccc;}
+.studentinfo .nameBox {margin-bottom: 10px;}
+.studentinfo .username {font-size: 18px;font-weight: bold;color: #000;}
+
+.studentinfo .detial {margin-bottom: 10px;}
+
+.mh {margin-bottom: 20px;}
+.mc .m-side {float: right;width: 260px;}
+.mc .m-main {margin-right: 270px;}
+
+.activities {margin-left: -10px;}
+.box-ac {float: left;width: 400px;margin:0 0 10px 10px;background-color: #f2f2f2;}
+.box-ac .box-ac-hd {background-color: #EF4224;padding: 10px 20px;color: #FFF;font-size: 18px;display: inline-block;}
+.box-ac .box-ac-bd {padding:10px 10px 0;margin-bottom: 10px;overflow: hidden;height: 235px;}
+.box-ac .box-ac-bd .item {display: block;line-height: 1.5;overflow: hidden;width: 100%;white-space: nowrap;word-break:keep-all;}
+
+.clearfix {*zoom:1;}
+.clearfix:after {
+	content: "";
+	display: block;
+	visibility: hidden;
+	height: 0;
+	clear: both;
+}
+.s-hidden {display: none;}

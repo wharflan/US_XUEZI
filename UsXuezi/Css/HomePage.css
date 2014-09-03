@@ -38,7 +38,6 @@
     position: absolute;
     top:100%;
     left: 0;
-    width: 100%;
     padding-top: 10px;
     transition:opacity .2s linear 0s;
 }
@@ -65,11 +64,11 @@
 .cities .city:hover .info-list {display:block;}
 .cities .city:hover .name:before {display: block;}
 
-.cities .city:nth-child(1) .info-list {padding-left: 0;}
-.cities .city:nth-child(2) .info-list {padding-left: 100px;}
-.cities .city:nth-child(3) .info-list {padding-left: 150px;}
-.cities .city:nth-child(4) .info-list {padding-left: 200px;}
-.cities .city:nth-child(5) .info-list {padding-left: 300px;}
+.cities .city:nth-child(1) .info-list {left: 0;}
+.cities .city:nth-child(2) .info-list {left: 100px;}
+.cities .city:nth-child(3) .info-list {left: 150px;}
+.cities .city:nth-child(4) .info-list {left: 200px;}
+.cities .city:nth-child(5) .info-list {left: 300px;}
 
 .cities .moreCity {
     height: 94px;

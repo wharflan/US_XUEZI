@@ -27,34 +27,34 @@ namespace UsXuezi.PublishPage
 
         protected void Page_LoadComplete(object sender, EventArgs e)
         {
-            Button3.Attributes.Add("onclick", "this.form.target='_blank'");
-            Button2.Attributes.Add("onclick", "this.form.target=''");
+            //Button3.Attributes.Add("onclick", "this.form.target='_blank'");
+            //Button2.Attributes.Add("onclick", "this.form.target=''");
 
-            if (!IsPostBack)
-            {
-                tagblock.Visible = true;
-                editorblock.Visible = false;
-                //Edit Mode
-                if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
-                {
-                    if (Request.QueryString["method"] == "Edit")
-                    {
-                        int postid = int.Parse(Request.QueryString["id"]);
-                        mp = bp.GetModel(postid);
-                        if (cookieUser.Value != mp.Post_UserID.ToString())
-                        {
-                            EFun.Redirect_Webconfig("404");
-                        }
-                        mpn = bpn.GetModel(postid);
-                        mlt = bt.GetModelList("Tag_PostID = " + postid);
-                        fillblank();
-                    }
-                }
-                else
-                {
-                    //Publish Mode                
-                }
-            }
+            //if (!IsPostBack)
+            //{
+            //    tagblock.Visible = true;
+            //    editorblock.Visible = false;
+            //    //Edit Mode
+            //    if (Request.QueryString["id"] != null && Request.QueryString["method"] != null)
+            //    {
+            //        if (Request.QueryString["method"] == "Edit")
+            //        {
+            //            int postid = int.Parse(Request.QueryString["id"]);
+            //            mp = bp.GetModel(postid);
+            //            if (cookieUser.Value != mp.Post_UserID.ToString())
+            //            {
+            //                EFun.Redirect_Webconfig("404");
+            //            }
+            //            mpn = bpn.GetModel(postid);
+            //            mlt = bt.GetModelList("Tag_PostID = " + postid);
+            //            fillblank();
+            //        }
+            //    }
+            //    else
+            //    {
+            //        //Publish Mode                
+            //    }
+            //}
         }
 
         protected void Button1_Click(object sender, EventArgs e)
