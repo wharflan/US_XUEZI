@@ -111,14 +111,92 @@
             </div>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="False">
                 <ContentTemplate>
+                    
+                    <div id="postcontents" class="postcontents" runat="server"></div>
+                    <ul class="sh-list clearfix" runat="server">
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="" title="时尚连衣裙">时尚连衣裙</a></dt>
+                                <dd>地区&nbsp;Cambridge</dd>
+                                <dd>租期&nbsp;2014/06/01-2018/12/31</dd>
+                            </dl>
+                            <span class="price-tag">$998</span>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="" title="出售爱车，走过路过不要错过，绝对超值">出售爱车，走过路过不要错过，绝对超值</a></dt>
+                                <dd>年份&nbsp;2008</dd>
+                                <dd>里程&nbsp;9999miles</dd>
+                            </dl>
+                            <span class="price-tag">$998</span>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="" title="时尚连衣裙">时尚连衣裙</a></dt>
+                                <dd>成色&nbsp;9新</dd>
+                                <dd>交易方式&nbsp;自取 邮寄</dd>
+                            </dl>
+                            <span class="price-tag">$998</span>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="" title="波士顿暑期寄存">波士顿暑期寄存</a></dt>
+                                <dd>评分&nbsp;<span class="star05"></span></dd>
+                                <dd>行业&nbsp;生活服务类</dd>
+                            </dl>
+                            <span class="price-tag">$998</span>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="" title="波士顿暑期寄存">波士顿暑期寄存</a></dt>
+                                <dd>地区&nbsp;Diamond Hill</dd>
+                                <dd>房型&nbsp;Single Family house</dd>
+                                <dd>居住面积&nbsp;199862 sqft</dd>
+                            </dl>
+                            <span class="price-tag">$998</span>
+                        </li>
+                    </ul>
 
-                    <div id="postcontents" class="postcontents" runat="server">
-                    </div>
-                    <div class="floatleft">
+                    <ul class="qa-list">
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="">请问怎样去赌城最方便？</a></dt>
+                                <dd>作者：刘某某</dd>
+                                <dd>标签：<span>旅行</span>&nbsp;<span>交通</span></dd>
+                                <dd class="reply-data">查看/回答：<span class="check">4</span>/<span class="answer">0</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="">请问怎样去赌城最方便？</a></dt>
+                                <dd>作者：刘某某</dd>
+                                <dd>标签：<span>旅行</span>&nbsp;<span>交通</span></dd>
+                                <dd class="reply-data">查看/回答：<span class="check">4</span>/<span class="answer">0</span></dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
+                            <dl>
+                                <dt><a href="">请问怎样去赌城最方便？</a></dt>
+                                <dd>作者：刘某某</dd>
+                                <dd>标签：<span>旅行</span>&nbsp;<span>交通</span></dd>
+                                <dd class="reply-data">查看/回答：<span class="check">4</span>/<span class="answer">0</span></dd>
+                            </dl>
+                        </li>
+                    </ul>
+
+                    <!-- <div>
                         <asp:Button ID="Button3" runat="server" CssClass="big_border_button fix-clear" OnClick="Button3_Click" Text="上一页" Visible="false" />
                         <asp:DropDownList ID="DropDownList1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged" AutoPostBack="true" runat="server" Visible="false"></asp:DropDownList>
                         <asp:Button ID="Button2" runat="server" CssClass="big_border_button fix-clear" OnClick="Button2_Click" Text="下一页" Visible="false" />
-                    </div>
+                    </div> -->
                     <asp:HiddenField ID="HiddenField1" runat="server" Value="1" />
                 </ContentTemplate>
                 <Triggers>
