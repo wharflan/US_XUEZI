@@ -106,13 +106,14 @@
                 <BBS:RentFilter runat="server" ID="RF1" Visible="false" />
                 <BBS:BusinessFilter runat="server" ID="BF1" Visible="false" />
                 <BBS:ItemFilter runat="server" ID="IF1" Visible="false" />
-                <asp:Button ID="Button1" CssClass="border_button " OnClick="Button1_Click" runat="server" Text="筛选" />
+                <asp:Button ID="Button1" CssClass="border_button btn-filter" OnClick="Button1_Click" runat="server" Text="筛选" />
                 <div class="fix-clear"></div>
             </div>
             <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="False">
                 <ContentTemplate>
                     
                     <div id="postcontents" class="postcontents" runat="server"></div>
+                    <!-- 二手市场列表 -->
                     <ul class="sh-list clearfix" runat="server">
                         <li>
                             <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
@@ -161,7 +162,8 @@
                             <span class="price-tag">$998</span>
                         </li>
                     </ul>
-
+                    
+                    <!-- 问答专栏 & 吹水吐槽 -->
                     <ul class="qa-list">
                         <li>
                             <a href="" class="thumb"><img src="/Uploads/Image/Post/14/images/ibp5UzVC4xv08k.jpg" alt=""></a>
