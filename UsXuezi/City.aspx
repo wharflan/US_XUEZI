@@ -106,6 +106,11 @@
                 <BBS:RentFilter runat="server" ID="RF1" Visible="false" />
                 <BBS:BusinessFilter runat="server" ID="BF1" Visible="false" />
                 <BBS:ItemFilter runat="server" ID="IF1" Visible="false" />
+                <BBS:EstateFilter runat="server" ID="EF1" Visible="false" />
+                <BBS:UsedCarFilter runat="server" ID="UCF1" Visible="false" />
+                <BBS:JobFilter runat="server" ID="JF1" Visible="false" />
+                <BBS:FoodFilter runat="server" ID="FF1" Visible="false" />
+                
                 <asp:Button ID="Button1" CssClass="border_button btn-filter" OnClick="Button1_Click" runat="server" Text="筛选" />
                 <div class="fix-clear"></div>
             </div>

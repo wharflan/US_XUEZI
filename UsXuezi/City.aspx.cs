@@ -61,6 +61,7 @@ namespace UsXuezi
                         {
                             case 1:
                                 this.Title += "房产交易";
+                                EF1.Visible = true;
                                 break;
                             case 2:
                                 this.Title += "商家机构";
@@ -79,9 +80,11 @@ namespace UsXuezi
                                 break;
                             case 5:
                                 this.Title += "二手车";
+                                UCF1.Visible = true;
                                 break;
                             case 6:
                                 this.Title += "招聘";
+                                JF1.Visible = true;
                                 break;
                             case 7:
                                 this.Title += "答疑解惑";
@@ -91,6 +94,7 @@ namespace UsXuezi
                                 break;
                             case 9:
                                 this.Title += "美食餐饮";
+                                FF1.Visible = true;
                                 break;
                         }
                         getfirstpage(int.Parse(city_type));
@@ -121,7 +125,7 @@ namespace UsXuezi
         {
             mlp = new List<Maticsoft.Model.Tb_Post>();
             mlp = Session["CityPostList"] as List<Maticsoft.Model.Tb_Post>;
-            if (int.Parse(Request.QueryString["type"]) >6)
+            if (int.Parse(Request.QueryString["type"]) > 6)
             {
                 Maticsoft.BLL.Tb_Post bp = new Maticsoft.BLL.Tb_Post();
                 string str = "Post_Type = " + post_type + " and Post_CityID = " + Session["City_ID"].ToString();

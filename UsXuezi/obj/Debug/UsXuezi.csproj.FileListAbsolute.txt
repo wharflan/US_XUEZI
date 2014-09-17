@@ -43,6 +43,5 @@ D:\Github\US_XUEZI\UsXuezi\bin\CKFinder.dll
 D:\Github\US_XUEZI\UsXuezi\bin\Uploadify_Simple_ASPNET.dll
 D:\Github\US_XUEZI\UsXuezi\bin\CKFinder.pdb
 D:\Github\US_XUEZI\UsXuezi\bin\Uploadify_Simple_ASPNET.pdb
-D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.csprojResolveAssemblyReference.cache
 D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.dll
 D:\Github\US_XUEZI\UsXuezi\obj\Debug\UsXuezi.pdb
