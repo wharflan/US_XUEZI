@@ -1,1 +1,32 @@
-﻿
+﻿.item-hd .link {margin-left: 5px;}
+.fl {float: left;}
+
+.star-rating {line-height: 1.5;}
+.starbar {
+	width: 100px;
+	height: 20px;
+	background: url("../Images/stars.png") 0px 0px repeat-x;
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+}
+.current-rating {
+	width: 85%;
+	height: 100%;
+	background: url("../Images/stars.png") 0px -40px repeat-x;
+	margin: 0;
+	padding: 0;
+}
+.current-rating li {
+	list-style:none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+}
+.current-rating li:hover {background: url("../Images/stars.png") 0px -20px repeat-x;}
+.current-rating .star5 {width: 100%;}
+.current-rating .star4 {width: 80%;}
+.current-rating .star3 {width: 60%;}
+.current-rating .star2 {width: 40%;}
+.current-rating .star1 {width: 20%;}

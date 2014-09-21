@@ -7,16 +7,17 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentHolder" runat="server">
     <div id="renttitle" class="renttitle title_deco expand">
-        <div class="col_66">
+        <div class="col_66 item-hd">
             <h1>
                 <asp:Label ID="Label1" runat="server" class="big_heading" Text="转手驴牌经典款包包"></asp:Label></h1>
             <p>
                 <asp:Label ID="Label2" runat="server" class="sub_heading" Text="纽约曼哈顿 · 2012年购入 · 发布于2014-03-19"></asp:Label>
-                <asp:LinkButton ID="LinkButton1" OnClick="LinkButton1_Click" runat="server">编辑</asp:LinkButton>
-
+                <asp:LinkButton ID="LinkButton1" class="link" OnClick="LinkButton1_Click" runat="server">编辑</asp:LinkButton>
+                <a href="" class="link">删除</a>
+                <a href="" class="link">置顶</a>
+                <a href="" class="link">收藏</a>
             </p>
         </div>
-
         <div class="weibo_wechat col_33">
             <BBS:SocialIcons ID="SocialIcons2" runat="server"></BBS:SocialIcons>
         </div>
@@ -43,8 +44,21 @@
         <div class="rightblock">
             <div id="rentinfo" class="rentinfo sideblock">
                 <div id="basicinfo" class="basicinfo inner_sideblock">
+                    <div class="star-rating">
+                        <span>评分：</span>
+                        <div class="starbar">
+                            <ul class="current-rating" data-score="85">
+                                <li class="star5"></li>
+                                <li class="star4"></li>
+                                <li class="star3"></li>
+                                <li class="star2"></li>
+                                <li class="star1"></li>
+                            </ul>
+                        </div>
+                        <span class="score">9.5</span>
+                    </div>
                     <p>
-                        <asp:Label ID="Label3" runat="server" Text="新旧程度"></asp:Label>
+                        <asp:Label ID="Label3" runat="server" Text="新旧程度："></asp:Label>
                     </p>
                     <p>
                         <asp:Label ID="Label4" runat="server" Text="包邮/面交/自取"></asp:Label>
@@ -84,5 +98,17 @@
             </div>
         </div>
     </div>
+    <script>
+        $(function(){
+            $('.rating-stars').mouseover(function(ev){
+                
+                if ($(ev.target).is('i')) {
+                    $(ev.target).removeClass('off');
+                    $(ev.target).prevAll().removeClass('off');
+                    $(ev.target).nextAll().addClass('off');
+                }
+            });
+        });
+    </script>
 
 </asp:Content>
