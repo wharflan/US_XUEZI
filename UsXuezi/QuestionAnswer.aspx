@@ -43,7 +43,107 @@
                                 <asp:Button ID="Button2" runat="server" class="border_button floatright left_5 top_10" Text="提交" OnClick="Button2_Click" />
                             </div>
                         </div>
-                        <div id="AnswerPart" class="AnswerPart" runat="server">
+                        <div class="answer-box">
+                            <ul>
+                                <li class="m-answer">
+                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                    <div class="main">
+                                        <a href="" class="username">林肯叔叔</a>
+                                        <div class="content">
+                                            <p>非常简要的说明，没有。</p>
+                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                        </div>
+                                        <div class="answer-info">
+                                            <span class="date">发布于2014/08/05</span>
+                                            <span class="c-comments">99条评论</span>
+                                            <span class="c-userful">有用(10)</span>
+                                            <span class="">没有帮助(5)</span>
+                                        </div>
+                                        <div class="ans-comments">
+                                            <ul class="comments-list">
+                                                <li>
+                                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                                    <div class="main">
+                                                        <a href="" class="username">熊猫叔叔</a>
+                                                        <div class="content">
+                                                            <p>非常简要的说明，没有。</p>
+                                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                                        </div>
+                                                        <span class="date">2014/08/05 22:59</span>
+                                                        <span class="likes">1赞</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                                    <div class="main">
+                                                        <a href="" class="username">熊猫叔叔</a>
+                                                        <div class="content">
+                                                            <p>非常简要的说明，没有。</p>
+                                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                                        </div>
+                                                        <span class="date">2014/08/05 22:59</span>
+                                                        <span class="likes">1赞</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="comment-box">
+                                                <div class="cont">
+                                                    <textarea name="" id="" placeholder="写下你的评论"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="m-answer">
+                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                    <div class="main">
+                                        <a href="" class="username">林肯叔叔</a>
+                                        <div class="content">
+                                            <p>非常简要的说明，没有。</p>
+                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                        </div>
+                                        <div class="answer-info">
+                                            <span class="date">发布于2014/08/05</span>
+                                            <span class="c-comments">99条评论</span>
+                                            <span class="c-userful">有用(10)</span>
+                                            <span class="">没有帮助(5)</span>
+                                        </div>
+                                        <div class="ans-comments">
+                                            <ul class="comments-list">
+                                                <li>
+                                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                                    <div class="main">
+                                                        <a href="" class="username">熊猫叔叔</a>
+                                                        <div class="content">
+                                                            <p>非常简要的说明，没有。</p>
+                                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                                        </div>
+                                                        <span class="date">2014/08/05 22:59</span>
+                                                        <span class="likes">1赞</span>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                                                    <div class="main">
+                                                        <a href="" class="username">熊猫叔叔</a>
+                                                        <div class="content">
+                                                            <p>非常简要的说明，没有。</p>
+                                                            <p>奥巴马的医保政策全称是Patient Protection</p>
+                                                        </div>
+                                                        <span class="date">2014/08/05 22:59</span>
+                                                        <span class="likes">1赞</span>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="comment-box">
+                                                <div class="cont">
+                                                    <textarea name="" id="" placeholder="写下你的评论"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </ContentTemplate>
                     <Triggers>
@@ -65,30 +165,29 @@
 
             <div id="similar" class="sideblock top_20">
                 <h3 style="padding: 12px 18px;">更多相关提问</h3>
-                <ul>
-                    <li>
-                        <asp:ImageButton ID="ImageButton0" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton2" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton3" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton3" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton4" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton4" runat="server">LinkButton</asp:LinkButton></li>
-
-                    <li>
-                        <asp:ImageButton ID="ImageButton5" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton5" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton6" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton6" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton7" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton7" runat="server">LinkButton</asp:LinkButton></li>
-
+                <ul class="rel-question">
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
+                    <li><a href="">相关问题相关问题相关问题相关问题</a></li>
                 </ul>
             </div>
         </div>
+
+        <script>
+        $(function(){
+            $('#ContentHolder_myanswer').remove();
+            $('.c-comments').click(function(ev){
+                $(this).parents('.m-answer').toggleClass('show-comments');
+            });
+        });
+        </script>
     </div>
 </asp:Content>
 

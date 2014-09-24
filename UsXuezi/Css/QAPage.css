@@ -26,5 +26,32 @@ height: 180px;
 border:none;
 }
 
+.rel-question li {padding-left: 20px;line-height: 2;}
+
+.answer-box {border-top: 1px dashed #ccc;}
+
+.m-answer {margin: 10px 0;}
+.m-answer .user-avatar {float: left;width: 60px;height: 60px;}
+.m-answer .user-avatar img {width: 100%;height: 100%;display: block;}
+.m-answer .main {margin-left: 70px;}
+.m-answer .answer-info {font-size: 14px;color: #999;}
+.m-answer .answer-info .date {margin-right: 15px;}
+.m-answer .answer-info .c-comments {display: inline-block;margin-right: 15px;padding-left: 20px;background: url(../Images/comments.png) 0 center/16px 16px no-repeat;cursor: pointer;}
+.m-answer .answer-info .c-userful {margin-right: 5px;}
+
+.ans-comments {border: 1px solid #ccc;border-radius:4px;margin-top: 10px;display: none;}
+.ans-comments .comments-list {border-bottom: 1px solid #bbb;padding: 10px 10px 0;}
+.ans-comments .comments-list li {border-bottom: 1px dashed #ccc;margin-bottom: 10px;}
+.ans-comments .comments-list li:last-child {border-bottom: 0 none;}
+.ans-comments .user-avatar {float: left;width: 40px;height: 40px;}
+.ans-comments .user-avatar img {width: 100%;height: 100%;display: block;}
+.ans-comments .main {margin-left: 50px;overflow: hidden;}
+.ans-comments .date {font-size: 12px;float: left;color: #ccc;}
+.ans-comments .likes {font-size: 12px;float: right;color: #ccc;cursor: pointer;}
+.ans-comments .comment-box {background-color: #f6f6f6;padding: 20px;}
+.ans-comments .comment-box textarea {width: 100%;height: 34px;border:1px solid #ccc;border-radius: 4px;line-height: 34px;text-indent: 10px;}
+
+.answer-box .show-comments .ans-comments {display: block;}
+
 
 
