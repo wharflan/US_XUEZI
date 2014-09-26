@@ -105,28 +105,47 @@
 
             <div id="rentsimilar" class="rentsimilar sideblock top_20">
                 <h3 style="padding: 12px 18px;">类似房源</h3>
-                <ul>
-
+                <ul class="rel-pd">                    
                     <li>
-                        <asp:ImageButton ID="ImageButton0" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton1" runat="server">LinkButton</asp:LinkButton></li>
+                        <div class="pic">
+                            <img src="Uploads/Image/Post/63/_thumbs/Files/1_(2).jpg" alt="">
+                        </div>
+                        <div class="main">
+                            <h3 class="title">物品标题物品标题</h3>
+                            <div class="price">租金：888刀</div>
+                            <div class="date">发布日期：8月15日</div>
+                        </div>
+                    </li>
                     <li>
-                        <asp:ImageButton ID="ImageButton3" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton2" runat="server">LinkButton</asp:LinkButton></li>
+                        <div class="pic">
+                            <img src="Uploads/Image/Post/63/_thumbs/Files/1_(2).jpg" alt="">
+                        </div>
+                        <div class="main">
+                            <h3 class="title">物品标题物品标题</h3>
+                            <div class="price">租金：888刀</div>
+                            <div class="date">发布日期：8月15日</div>
+                        </div>
+                    </li>
                     <li>
-                        <asp:ImageButton ID="ImageButton4" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton3" runat="server">LinkButton</asp:LinkButton></li>
-
+                        <div class="pic">
+                            <img src="Uploads/Image/Post/63/_thumbs/Files/1_(2).jpg" alt="">
+                        </div>
+                        <div class="main">
+                            <h3 class="title">物品标题物品标题</h3>
+                            <div class="price">租金：888刀</div>
+                            <div class="date">发布日期：8月15日</div>
+                        </div>
+                    </li>
                     <li>
-                        <asp:ImageButton ID="ImageButton5" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton4" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton6" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton5" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton7" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton6" runat="server">LinkButton</asp:LinkButton></li>
-
+                        <div class="pic">
+                            <img src="Uploads/Image/Post/63/_thumbs/Files/1_(2).jpg" alt="">
+                        </div>
+                        <div class="main">
+                            <h3 class="title">物品标题物品标题</h3>
+                            <div class="price">租金：888刀</div>
+                            <div class="date">发布日期：8月15日</div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>

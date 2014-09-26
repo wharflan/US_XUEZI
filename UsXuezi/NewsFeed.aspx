@@ -34,10 +34,47 @@
                     <span>Tags:</span>
                 </div>
 
-                <p>
-                    <asp:Button ID="Button1" runat="server" class="red_button" Text="回复" OnClick="Button1_Click" />
-                </p>
-
+                <div class="reply-box">
+                    <div class="inp-textBlock">
+                        <textarea name="" id=""></textarea>
+                    </div>
+                    <button class="red_button">回复</button>
+                </div>
+                <div class="answer-box">
+                    <ul>
+                        <li class="m-answer">
+                            <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                            <div class="main">
+                                <a href="" class="username">林肯叔叔</a>
+                                <div class="content">
+                                    <p>非常简要的说明，没有。</p>
+                                    <p>奥巴马的医保政策全称是Patient Protection</p>
+                                </div>
+                                <div class="answer-info">
+                                    <span class="date">发布于2014/08/05</span>
+                                    <span class="c-userful">有用(10)</span>
+                                    <span class="">没有帮助(5)</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="m-answer">
+                            <div class="user-avatar"><img src="Images/user.png" alt="用户头像"></div>
+                            <div class="main">
+                                <a href="" class="username">林肯叔叔</a>
+                                <div class="content">
+                                    <p>非常简要的说明，没有。</p>
+                                    <p>奥巴马的医保政策全称是Patient Protection</p>
+                                </div>
+                                <div class="answer-info">
+                                    <span class="date">发布于2014/08/05</span>
+                                    <span class="c-userful">有用(10)</span>
+                                    <span class="">没有帮助(5)</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
                 <div id="myanswer" class="myanswer" visible="false" runat="server">
                     <asp:ImageButton ID="ImageButton1" runat="server" CssClass="avatar" />
                     <textarea id="QnA_answer" rows="7" runat="server"></textarea>
@@ -58,28 +95,18 @@
             </div>
 
             <div id="similar" class="sideblock top_20">
-                <h3 style="padding: 12px 18px;">更多相关提问</h3>
-                <ul>
-                    <li>
-                        <asp:ImageButton ID="ImageButton0" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton2" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton3" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton3" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton4" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton4" runat="server">LinkButton</asp:LinkButton></li>
-
-                    <li>
-                        <asp:ImageButton ID="ImageButton5" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton5" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton6" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton6" runat="server">LinkButton</asp:LinkButton></li>
-                    <li>
-                        <asp:ImageButton ID="ImageButton7" runat="server" CssClass="thumb_img" />
-                        <asp:LinkButton ID="LinkButton7" runat="server">LinkButton</asp:LinkButton></li>
-
+                <h3 style="padding: 12px 18px;">更多相关文章</h3>
+                <ul class="rel-question">
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
+                    <li><a href="">相关文章相关文章相关文章相关文章</a></li>
                 </ul>
             </div>
         </div>
