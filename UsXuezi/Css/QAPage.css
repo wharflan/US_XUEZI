@@ -53,5 +53,10 @@ border:none;
 
 .answer-box .show-comments .ans-comments {display: block;}
 
+.reply-box {overflow: hidden;margin-top: 10px;}
+.reply-box button	{float: right;margin-top: 5px;}
+
+.inp-textBlock {border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px;}
+.inp-textBlock textarea {width: 100%;display: block;height: 80px;border: 0 none;}
 
 

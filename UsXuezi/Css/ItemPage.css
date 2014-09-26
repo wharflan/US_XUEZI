@@ -30,3 +30,9 @@
 .current-rating .star3 {width: 60%;}
 .current-rating .star2 {width: 40%;}
 .current-rating .star1 {width: 20%;}
+
+.rel-pd {padding: 0 10px;}
+.rel-pd li {border-bottom: 1px dashed #ccc;overflow: hidden;margin-bottom: 10px;}
+.rel-pd .pic {float: left;width: 100px;height: 100px;}
+.rel-pd .pic img {width: 100%;height: 100%;display: block;}
+.rel-pd .main {margin-left: 110px;}

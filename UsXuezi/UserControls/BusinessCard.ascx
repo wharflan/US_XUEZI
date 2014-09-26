@@ -12,6 +12,21 @@
 
             <!--如有评分则直接显示星星，不显示“评分”二字-->
             <div class="floatleft left_30">
+                <div class="star-rating">
+                    <span>评分：</span>
+                    <div class="starbar">
+                        <ul class="current-rating" data-score="85">
+                            <li class="star5"></li>
+                            <li class="star4"></li>
+                            <li class="star3"></li>
+                            <li class="star2"></li>
+                            <li class="star1"></li>
+                        </ul>
+                    </div>
+                    <span class="score">9.5</span>
+                </div>
+            </div>
+            <div class="floatleft left_30">
                 <asp:Label ID="Label2" runat="server" class="note" Text="暂无评分"></asp:Label><span class="starts"></span>
             </div>
         </div>
@@ -20,7 +35,7 @@
             <asp:Label ID="Label3" runat="server" class="sub_heading top_50" Text="主营&emsp;"></asp:Label>
         </div>
 
-        <div class="biz_contact top_10 expand" style="width: 70%;">
+        <div class="info-contact biz_contact top_10 expand" style="width: 70%;">
 
             <div class="item floatleft">
                 <asp:Label ID="Label5" runat="server" Text="电话&emsp;"></asp:Label>
@@ -41,7 +56,7 @@
             <div class="item floatleft">
                 <asp:Label ID="Label9" runat="server" Text="QQ&emsp;"></asp:Label>
             </div>
-            <div class="longitem floatleft">
+            <div class="item longitem floatleft">
                 <asp:Label ID="Label4" runat="server" Text="地址&emsp;"></asp:Label>
             </div>
 
