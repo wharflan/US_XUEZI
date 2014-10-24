@@ -19,6 +19,31 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     padding:0 35px 30px;
 }
 
+.box02 .box02-hd {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(30,30,30);
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 1px #666;
+    position: relative;
+    text-align: left;
+    background-color: #fff;
+}
+.box02 .box02-bd {
+    padding: 30px 20px;
+    border: 1px solid rgb(179,178,178);
+    border-top: 0 none;
+    zoom: 1;
+}
+.box02 .box02-bd:after {
+    content: '';
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
 .item-row {margin-bottom: 15px;clear: both;}
 .item-row .label {float: left;width: 100px;}
 .item-row .cont {margin-left: 100px;}
@@ -37,6 +62,7 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
 .input-m {width: 220px;}
 .input-l {width: 330px;}
 
+.ml10 {margin-left: 10px;}
 
 /*form styles*/
 .msform {
@@ -74,16 +100,12 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     background-color: #f2f2f2;
     text-indent: 10px;
     text-align: left;
+    cursor: default;
 }
 
 .progressbar .active a {
     color: white;
     background-color: #ef4224;
-}
-
-.progressbar li:hover a {
-    background-color: #ef4224;
-    color: white;
 }
 
 #Biz_TextArea {
@@ -159,9 +181,9 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
 
 
 .editor {
-    float: left;
     width: 640px;
     min-height: 360px;
+    margin-left: 100px;
 }
 
 .last_step textarea {
@@ -179,4 +201,81 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
 .btns-box {text-align: center;}
 .btns-box .btn {margin-top: 0;}
 
-/* UsedCarPublish */
+/* foodPublish */
+.foodPublish-detial .main .l-m {float: left;}
+.foodPublish-detial .main .r-m {margin-left: 656px;text-align: center;}
+.foodPublish-detial .main .r-m textarea {width:300px;margin:10px auto;}
+
+/*登陆表单*/
+.loginbox {width: 840px;margin: 0 auto;}
+.loginform {
+    padding: 10px 0; 
+    overflow: visible;
+    width: 555px;
+    float: left;
+}
+.loginform .form-group, .regform .form-group {
+    position: relative;
+    height: 50px;
+    zoom: 1;
+    overflow: hidden;
+}
+.loginform .check {height: 30px;}
+.loginform .form-group label, .regform .form-group label {
+    float: left;
+    width: 100px;
+    height: 32px;
+    line-height: 32px;
+    text-align: right;
+    color: rgb(30,30,30);
+    font-size: 14px;
+}
+.loginform .form-group input, .regform .form-group input {float: left;}
+.loginform .inp {padding: 5px 4px;width: 200px;}
+.loginform .form-group .remember-pas {font-size: 12px;color: #000;}
+.loginform .cbox, .loginform .submit,.regform .cbox, .regform .submit {margin-left: 100px;margin-bottom: 10px;text-align: left;}
+.loginform .submit .btn-login {width: 200px;}
+.loginform .cbox label, .loginform .cbox a {font-size: 12px;}
+.loginform .cbox a {font-weight: bold;}
+.loginform .btn-login {height: 36px;line-height: 34px;width: 208px;background-color: #ef4224;border: 1px solid #ccc;color: #fff;cursor: pointer;}
+.loginform .verifyCode img {vertical-align: middle;margin-left: 5px;}
+
+.login-help {float:right;margin: 10px 80px 10px 0;padding: 10px;padding-left: 20px;border-left: 1px dashed rgb(102,102,102);}
+.login-help .info {margin: 10px 0}
+.login-help .btn-register {height: 36px;line-height: 34px;width: 80px;background-color: #ef4224;border: 1px solid #ccc;color: #fff;cursor: pointer;display: block;}
+.login-help .text2 a {text-decoration: none;color: rgb(102,102,102);font-size: 14px}
+
+/*注册表单*/
+.reg-main {
+    padding-bottom: 70px;
+    width: 600px;
+    margin: 30px auto;
+}
+.regform .form-group select {margin-top: 7px;}
+.regform .notic {margin-left: 3px;float: left;}
+.regform .tip {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    padding: 0 10px;
+    border: 1px solid;
+    border-radius: 4px;
+}
+.regform .inputError {border-color: rgb(185,74,72);}
+.regform .tError {
+    color: #b94a48;
+    background-color: #f2dede;
+    border-color: #eed3d7;
+}
+.regform .tInfo {
+    color: #3a87ad;
+    background-color: #d9edf7;
+    border-color: #bce8f1;
+}
+.regform .tSuccess {
+    color: #468847;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+#email_notice {display: inline-block;}

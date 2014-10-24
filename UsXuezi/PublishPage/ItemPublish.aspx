@@ -63,9 +63,16 @@
                 <th width="80">售价</th>
                 <td colspan="3" width="260">
                     <input type="text" class="input input-s">
-                    <label for=""><input type="checkbox" name="" id="">邮寄</label>
-                    <label for=""><input type="checkbox" name="" id="">自取</label>
-                    <span style="color:#f00;">价格错误</span>
+                    <!-- <span style="color:#f00;">价格错误</span> -->
+                </td>
+            </tr>
+            <tr>
+                <th width="80">交易方式</th>
+                <td colspan="3">
+                    <label><input type="checkbox" name="transactionMode">邮寄</label>
+                    <label class="ml10"><input type="checkbox" name="transactionMode">自取</label>
+                    <label class="ml10"><input type="checkbox" name="transactionMode">面交</label>
+                    <label class="ml10"><input type="checkbox" name="transactionMode">送达</label>
                 </td>
             </tr>
         </tbody>

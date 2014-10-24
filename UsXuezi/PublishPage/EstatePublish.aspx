@@ -69,11 +69,11 @@
                     </select>
                 </td>
                 <th width="80">居住面积</th>
-                <td width="260"><input type="text" class="input input-m"></td>
+                <td width="260"><input type="text" class="input input-m" placeholder="sq ft"></td>
             </tr>
             <tr>
                 <th width="80">土地面积</th>
-                <td width="260"><input type="text" class="input input-m"></td>
+                <td width="260"><input type="text" class="input input-m" placeholder="sq ft"></td>
                 <th width="80">停车位</th>
                 <td width="260">
                     <select name="" id="" style="width:234px;">
@@ -86,6 +86,8 @@
             <tr>
                 <th width="80">物管费</th>
                 <td width="260"><input type="text" class="input input-s"></td>
+                <th width="80">地产税</th>
+                <td width="260"><input type="text" class="input input-s" placeholder="USD/Year"></td>
             </tr>
         </tbody>
     </table>

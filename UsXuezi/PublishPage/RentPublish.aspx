@@ -18,7 +18,7 @@
     <div class="sub_heading">
         <asp:Label ID="Label1" runat="server" Style="width: 100%; text-align: left;" Text="*为必填项目"></asp:Label>
     </div>
-
+    <div style="color:#f00;">* 为必填项目</div>
     <table class="table table-1" style="width:800px;">
         <tbody>
             <tr>
@@ -50,9 +50,7 @@
             <tr>
                 <th width="80">月租</th>
                 <td width="260">
-                    <input type="text" class="input input-s">
-                    <label><input type="checkbox">单间</label>
-                    <label><input type="checkbox">整套</label>
+                    <input type="text" class="input input-m">
                 </td>
                 <th width="80">租期</th>
                 <td width="260">
@@ -61,6 +59,18 @@
                     <input type="text" class="input input-s datepicker">
                 </td>
             </tr>
+            <tr>
+                <th width="80">出租类型</th>
+                <td colspan="3">
+                    <label><input type="radio" name="rentType">单间</label>
+                    <label class="ml10"><input type="radio" name="rentType">整套</label>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <div><span style="color:#f00;">* </span>联系方式<span style="color:#f33;">（至少填写一项）</span></div>
+    <table class="table table-1" style="width:800px">
+        <tbody>
             <tr>
                 <th width="80">电话</th>
                 <td width="260"><input type="text" class="input input-m"></td>
@@ -75,6 +85,7 @@
             </tr>
         </tbody>
     </table>
+    
 
     <input type="button" name="next" class="next red_button floatright" value="下一步" />
     <script>
@@ -179,12 +190,9 @@
             <div class="floatleft" style="margin-top: 20px">
                 <asp:Label ID="Label7" runat="server" Text="停车位"></asp:Label>
 
-                <div class="floatleft" style="margin-left: -30px;">
-                    <asp:CheckBox ID="CheckBox1" CssClass="checkbox" runat="server" /><asp:Label ID="Label9" runat="server" Style="float: none;" Text="街泊"></asp:Label>
-                </div>
-                <div class="floatleft" style="margin-left: -30px;">
-                    <asp:CheckBox ID="CheckBox2" CssClass="checkbox" runat="server" /><asp:Label ID="Label10" runat="server" Style="float: none;" Text="车库"></asp:Label>
-                </div>
+                <label><input type="radio" name="rentType">街泊</label>
+                <label class="ml10"><input type="radio" name="rentType">车库</label>
+                <label class="ml10"><input type="radio" name="rentType">露天车位</label>
 
             </div>
         </div>

@@ -35,6 +35,24 @@
         </div>
 
     </div>
+    <script>
+        $(document).ready(function(){
+            $('.previous').click(function(){
+                var targetID = $(this).parents('.tab-panel').prev().attr('id');
+                $(this).parents('.tab-panel').hide();
+                $("#" + targetID).show();
+                $('.progressbar .active').removeClass('active');
+                $('.progressbar').find("a[href='#" + targetID + "']").parent().addClass('active');
+            });
+            $('.next').click(function(){
+                var targetID = $(this).parents('.tab-panel').next().attr('id');
+                $(this).parents('.tab-panel').hide();
+                $("#" + targetID).show();
+                $('.progressbar .active').removeClass('active');
+                $('.progressbar').find("a[href='#" + targetID + "']").parent().addClass('active');
+            });
+        });
+    </script>
 
 </asp:Content>
 
