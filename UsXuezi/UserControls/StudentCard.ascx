@@ -23,6 +23,7 @@
                 </div>
             </div>
             <asp:Button ID="Button2" runat="server" CssClass="border_button" Text="关注" OnClick="Button2_Click" />
+            <div class="inp-upload">上传头像<input type="file" name="" id=""></div>
         </div>
     </div>
 

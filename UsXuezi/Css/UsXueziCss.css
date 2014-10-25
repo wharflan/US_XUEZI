@@ -2,7 +2,8 @@
     margin: 0;
     padding: 0;
 }
-
+.fl {float: left;}
+.fr {float: right;}
 
 h1 {
     font-size: 22px;
@@ -719,11 +720,15 @@ a {
     margin-top: 20px;
 }
 
-    .plates input {
-        border: none;
-        background-color: #f2f2f2;
-        padding: 6px 13px;
-        color: #3c5a72;
-        cursor: pointer;
-        font: 18px 'Microsoft Yahei',Helvetica,Arial,sans-serif;
-    }
+.plates input {
+    border: none;
+    background-color: #f2f2f2;
+    padding: 6px 13px;
+    color: #3c5a72;
+    cursor: pointer;
+    font: 18px 'Microsoft Yahei',Helvetica,Arial,sans-serif;
+}
+
+#footer{padding: 50px 0 10px;text-align: center;font-size: 12px;color: #666;}
+#footer .links a, #footer .links span {font-size: 12px;color: #666;margin: 0 10px;text-decoration: none;}
+#footer p {margin: 10px 0;}

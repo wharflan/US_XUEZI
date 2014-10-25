@@ -7,32 +7,45 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentHolder" runat="server">
     <div class="msform top_50">
-        <fieldset>
-            <div>
-                <div class="long_item floatleft">
-                    <asp:Label ID="Label15" runat="server" Text="邮箱"></asp:Label><asp:TextBox ID="TextBox8" CssClass="basic-input" runat="server"></asp:TextBox>
-                    <div class="note floatleft" style="line-height: 35px;">*<a herf="/Register.aspx">注册</a></div>
-                </div>
+        <div class="w1 mc-1 loginbox">
+            <div class="box02">
+                <h4 class="box02-hd">登陆账户</h4>
+                <div class="box02-bd">
+                    <div class="loginform">
+                        <div class="form-group">
+                            <label for="username">邮箱：</label><asp:TextBox ID="TextBox8" CssClass="inp" runat="server"></asp:TextBox>
+                        </div>
 
-                <div class="item floatleft">
-                    <asp:Label ID="Label9" runat="server" Text="密码"></asp:Label><asp:TextBox ID="TextBox2" CssClass="basic-input" runat="server"></asp:TextBox>
-                </div>
+                        <div class="form-group">
+                            <label for="password">密码：</label><asp:TextBox ID="TextBox2" CssClass="inp" runat="server"></asp:TextBox>
+                        </div>
 
-                <div class="floatleft">
-                    <asp:Label ID="Label1" Width="300px" runat="server" Text=""></asp:Label>
-                </div>
-                <!--
-                <div class="item floatleft" >
-                    <asp:Label ID="Label5" runat="server" Text="验证码"></asp:Label>
-                    <asp:TextBox ID="TextBox5" CssClass="basic-input" Width="135px" runat="server"></asp:TextBox>
-                    <asp:Image ID="Image1" ImageUrl="/UserControls/ValidateCode.aspx" Style="float: left;" Height="32" runat="server" />
-                </div>
+                        <div style="display:none;">
+                            <asp:Label ID="Label1" Width="300px" runat="server" Text=""></asp:Label>
+                        </div>
+                        
+                        <div class="form-group verifyCode" >
+                            <label for="password">验证码：</label>
+                            <asp:TextBox ID="TextBox5" CssClass="inp" Width="135px" runat="server"></asp:TextBox>
+                            <asp:Image ID="Image1" ImageUrl="/UserControls/ValidateCode.aspx" Style="float: left;" Height="32" runat="server" />
+                        </div>
+                        <div class="submit">
+                            <asp:Button ID="Button1" OnClick="Button1_Click" class="btn-login" runat="server" Text="登录" />
+                        </div>
+                    </div>
 
-                
-                -->
+                    <div class="login-help">
+                        <p class="info text1">还不是会员？</p>
+                        <a href="/register.aspx" class="btn-register">注册</a>
+                    </div>
+                </div>
             </div>
-
-            <asp:Button ID="Button1" OnClick="Button1_Click" class="submit red_button floatright" runat="server" Text="登陆" />
-        </fieldset>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="links"><a href="" target="_blank">关于我们</a>|<a href="" target="_blank">联系我们</a>|<a href="" target="_blank">加入我们</a>|<a href="" target="_blank">用户协议</a>|<a href="" target="_blank">用户指南</a></div>
+        <p>Copyright © 2014 usxuezi.com    All rights reserved.</p>
     </div>
 </asp:Content>
+
+
