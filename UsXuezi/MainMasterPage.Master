@@ -82,7 +82,7 @@
 
                         <div id="iflogin" runat="server">
                             <div id="not_login" class="nav_rightblock" runat="server">
-                                <asp:Button ID="logon" class="log_icon" runat="server" Text="登陆" OnClick="logon_Click" />
+                                <asp:Button ID="logon" class="log_icon" runat="server" Text="登录" OnClick="logon_Click" />
                                 <asp:Button ID="register" class="log_icon" runat="server" Text="注册" OnClick="register_Click" />
                             </div>
 
