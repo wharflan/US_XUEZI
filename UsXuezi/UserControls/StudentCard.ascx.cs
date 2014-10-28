@@ -57,7 +57,9 @@ namespace UsXuezi.UserControls
             }
             else
             {
-                Response.Redirect(System.Configuration.ConfigurationManager.AppSettings["404"]);
+                //页面跳转
+                //Response.Redirect(System.Configuration.ConfigurationManager.AppSettings["404"]);
+                
             }
         }
 

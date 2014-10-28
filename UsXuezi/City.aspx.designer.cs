@@ -94,6 +94,42 @@ namespace UsXuezi {
         protected global::UsXuezi.UserControls.Filters.ItemFilter IF1;
         
         /// <summary>
+        /// EF1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::UsXuezi.UserControls.Filters.EstateFilter EF1;
+        
+        /// <summary>
+        /// UCF1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::UsXuezi.UserControls.Filters.UsedCarFilter UCF1;
+        
+        /// <summary>
+        /// JF1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::UsXuezi.UserControls.Filters.JobFilter JF1;
+        
+        /// <summary>
+        /// FF1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::UsXuezi.UserControls.Filters.FoodFilter FF1;
+        
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>

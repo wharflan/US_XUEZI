@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace UsXuezi.UserControls.Filters
 {
-    public partial class FoodFilter : System.Web.UI.UserControl, basefilter
+    public partial class EstateFilter : System.Web.UI.UserControl, basefilter
     {
         protected void Page_Load(object sender, EventArgs e)
         {

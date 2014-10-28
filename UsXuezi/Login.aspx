@@ -9,7 +9,7 @@
     <div class="msform top_50">
         <div class="w1 mc-1 loginbox">
             <div class="box02">
-                <h4 class="box02-hd">登陆账户</h4>
+                <h4 class="box02-hd">登录账户</h4>
                 <div class="box02-bd">
                     <div class="loginform">
                         <div class="form-group">
