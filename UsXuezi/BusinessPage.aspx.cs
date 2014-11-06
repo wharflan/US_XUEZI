@@ -19,34 +19,34 @@ namespace UsXuezi
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            //cookie = CookieLibrary.GetCookie("User_ID");
-            //if (Request.QueryString["id"] != null)
-            //{
-            //    if (Request.QueryString["id"] != "0")
-            //    {
-            //        PostID = int.Parse(Request.QueryString["id"]);
-            //        buildModel(PostID);
-            //        switch (mpb.Business_Status)
-            //        {
-            //            case 0:
+            cookie = CookieLibrary.GetCookie("User_ID");
+            if (Request.QueryString["id"] != null)
+            {
+                if (Request.QueryString["id"] != "0")
+                {
+                    PostID = int.Parse(Request.QueryString["id"]);
+                    buildModel(PostID);
+                    switch (mpb.Business_Status)
+                    {
+                        case 0:
 
-            //                buildPage();
-            //                break;
-            //            case 2:
-            //                specialpage(PostID);
-            //                break;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        //run preview mode
-            //        mp = (Maticsoft.Model.Tb_Post)Session["Business_pmp"];
-            //        mpb = (Maticsoft.Model.Tb_PostBusiness)Session["Business_pmps"];
-            //        mls = (List<Maticsoft.Model.Tb_Signature>)Session["Business_pmls"];
-            //        PostID = 0;
-            //        buildPage();
-            //    }
-            //}
+                            buildPage();
+                            break;
+                        case 2:
+                            specialpage(PostID);
+                            break;
+                    }
+                }
+                else
+                {
+                    //run preview mode
+                    mp = (Maticsoft.Model.Tb_Post)Session["Business_pmp"];
+                    mpb = (Maticsoft.Model.Tb_PostBusiness)Session["Business_pmps"];
+                    mls = (List<Maticsoft.Model.Tb_Signature>)Session["Business_pmls"];
+                    PostID = 0;
+                    buildPage();
+                }
+            }
 
 
         }

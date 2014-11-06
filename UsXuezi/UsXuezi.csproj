@@ -930,6 +930,7 @@
     <Content Include="Script\jquery.custom\jquery-ui.theme.min.css" />
     <Content Include="Script\jquery.js" />
     <Content Include="Script\swfobject.js" />
+    <Content Include="Script\tab.js" />
     <Content Include="Script\TN3\example1_lite.html" />
     <Content Include="Script\TN3\images\1.jpg" />
     <Content Include="Script\TN3\images\10.jpg" />
@@ -1091,9 +1092,12 @@
     <Content Include="UserControls\CKPic.ascx" />
     <Content Include="UserControls\Filters\BusinessFilter.ascx" />
     <Content Include="UserControls\Filters\BaseFilter.ascx" />
+    <Content Include="UserControls\Filters\EstateFilter.ascx" />
     <Content Include="UserControls\Filters\FoodFilter.ascx" />
     <Content Include="UserControls\Filters\ItemFilter.ascx" />
+    <Content Include="UserControls\Filters\JobFilter.ascx" />
     <Content Include="UserControls\Filters\RentFilter.ascx" />
+    <Content Include="UserControls\Filters\UsedCarFilter.ascx" />
     <Content Include="UserControls\MultiPics\Multi.ascx" />
     <Content Include="UserControls\PicView.ascx" />
     <Content Include="UserControls\PostBlock.ascx" />
@@ -1319,6 +1323,13 @@
     <Compile Include="UserControls\Filters\BaseFilter.ascx.designer.cs">
       <DependentUpon>BaseFilter.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Filters\EstateFilter.ascx.cs">
+      <DependentUpon>EstateFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filters\EstateFilter.ascx.designer.cs">
+      <DependentUpon>EstateFilter.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Filters\FoodFilter.ascx.cs">
       <DependentUpon>FoodFilter.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -1333,12 +1344,26 @@
     <Compile Include="UserControls\Filters\ItemFilter.ascx.designer.cs">
       <DependentUpon>ItemFilter.ascx</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\Filters\JobFilter.ascx.cs">
+      <DependentUpon>JobFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filters\JobFilter.ascx.designer.cs">
+      <DependentUpon>JobFilter.ascx</DependentUpon>
+    </Compile>
     <Compile Include="UserControls\Filters\RentFilter.ascx.cs">
       <DependentUpon>RentFilter.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UserControls\Filters\RentFilter.ascx.designer.cs">
       <DependentUpon>RentFilter.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\Filters\UsedCarFilter.ascx.cs">
+      <DependentUpon>UsedCarFilter.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserControls\Filters\UsedCarFilter.ascx.designer.cs">
+      <DependentUpon>UsedCarFilter.ascx</DependentUpon>
     </Compile>
     <Compile Include="UserControls\MultiPics\Multi.ascx.cs">
       <DependentUpon>Multi.ascx</DependentUpon>
