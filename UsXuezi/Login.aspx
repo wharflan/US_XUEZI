@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="UsXuezi.Login" MasterPageFile="~/MainMasterPage.Master" Title="登陆" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="UsXuezi.Login" MasterPageFile="~/MainMasterPage.Master" Title="登录" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="HeadHolder" runat="server">
     <link href="/Css/PublishPage.css" rel="stylesheet" />
@@ -9,15 +9,15 @@
     <div class="msform top_50">
         <div class="w1 mc-1 loginbox">
             <div class="box02">
-                <h4 class="box02-hd">登陆账户</h4>
+                <h4 class="box02-hd">登录账户</h4>
                 <div class="box02-bd">
                     <div class="loginform">
                         <div class="form-group">
-                            <label for="username">邮箱：</label><asp:TextBox ID="TextBox8" CssClass="inp" runat="server"></asp:TextBox>
+                            <label class="label" for="username">邮箱：</label><asp:TextBox ID="TextBox8" CssClass="inp" runat="server"></asp:TextBox>
                         </div>
 
                         <div class="form-group">
-                            <label for="password">密码：</label><asp:TextBox ID="TextBox2" CssClass="inp" runat="server"></asp:TextBox>
+                            <label class="label" for="password">密码：</label><asp:TextBox ID="TextBox2" CssClass="inp" runat="server"></asp:TextBox>
                         </div>
 
                         <div style="display:none;">
@@ -25,7 +25,7 @@
                         </div>
                         
                         <div class="form-group verifyCode" >
-                            <label for="password">验证码：</label>
+                            <label class="label" for="password">验证码：</label>
                             <asp:TextBox ID="TextBox5" CssClass="inp" Width="135px" runat="server"></asp:TextBox>
                             <asp:Image ID="Image1" ImageUrl="/UserControls/ValidateCode.aspx" Style="float: left;" Height="32" runat="server" />
                         </div>

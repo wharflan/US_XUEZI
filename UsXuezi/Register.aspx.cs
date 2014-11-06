@@ -14,7 +14,7 @@ namespace UsXuezi.PublishPage
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            EFun.Redirect_Webconfig("DefaultPage");
+            //EFun.Redirect_Webconfig("DefaultPage");
         }
 
         protected void RadioButtonList1_SelectedIndexChanged(object sender, EventArgs e)

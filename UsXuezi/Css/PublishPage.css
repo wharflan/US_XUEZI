@@ -192,9 +192,9 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
 /* QAPublish */
 .box-tag {clear: both;}
 .box-tag .labels {width: 690px;overflow: hidden;}
-.box-tag .labels a {float: left;margin-right: 35px;line-height: 30px;width: 100px;margin-bottom: 10px;text-align: center;}
-.label-blue {background-color: #538dd5;color: #fff;}
-.label-yellow {background-color: #ffc000;color: #000;}
+.box-tag .labels a {float: left;margin-right: 35px;line-height: 30px;width: 100px;margin-bottom: 10px;text-align: center;border-radius: 4px;}
+.label-city {background-color: #428bca;color: #fff;}
+.label-topic {background-color: #f0ad4e;color: #fff;}
 
 .delete-tag {vertical-align: top;margin-top:-10px;height: 14px;width: 14px;}
 
@@ -202,11 +202,13 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
 .btns-box .btn {margin-top: 0;}
 
 /* foodPublish */
-.foodPublish-detial .main .l-m {float: left;}
-.foodPublish-detial .main .r-m {margin-left: 656px;text-align: center;}
-.foodPublish-detial .main .r-m textarea {width:300px;margin:10px auto;}
+.foodPublish-detial .l-m {float: left;}
+.foodPublish-detial .editor {margin-left: 0;}
+.foodPublish-detial .r-m {margin-left: 656px;text-align: center;padding-top: 20px;}
+.foodPublish-detial .r-m textarea {width:300px;margin:10px auto;}
+.foodPublish-detial .tip {margin-top: 10px;}
 
-/*登陆表单*/
+/*登录表单*/
 .loginbox {width: 840px;margin: 0 auto;}
 .loginform {
     padding: 10px 0; 
@@ -221,7 +223,7 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     overflow: hidden;
 }
 .loginform .check {height: 30px;}
-.loginform .form-group label, .regform .form-group label {
+.loginform .form-group .label, .regform .form-group .label {
     float: left;
     width: 100px;
     height: 32px;
@@ -229,11 +231,11 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     text-align: right;
     color: rgb(30,30,30);
     font-size: 14px;
+    padding-right: 5px;
 }
-.loginform .form-group input, .regform .form-group input {float: left;}
-.loginform .inp {padding: 5px 4px;width: 200px;}
+.loginform .inp {padding: 5px 4px;width: 200px;float: left;}
 .loginform .form-group .remember-pas {font-size: 12px;color: #000;}
-.loginform .cbox, .loginform .submit,.regform .cbox, .regform .submit {margin-left: 100px;margin-bottom: 10px;text-align: left;}
+.loginform .cbox, .loginform .submit,.regform .cbox, .regform .submit {margin-left: 105px;margin-bottom: 10px;text-align: left;}
 .loginform .submit .btn-login {width: 200px;}
 .loginform .cbox label, .loginform .cbox a {font-size: 12px;}
 .loginform .cbox a {font-weight: bold;}
@@ -251,7 +253,8 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     width: 600px;
     margin: 30px auto;
 }
-.regform .form-group select {margin-top: 7px;}
+.regform .form-group select {margin-top: 7px;float: left;}
+.regform label + label {margin-left: 10px;}
 .regform .notic {margin-left: 3px;float: left;}
 .regform .tip {
     display: block;
@@ -262,7 +265,9 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     border: 1px solid;
     border-radius: 4px;
 }
+.regform .inp {padding: 5px 4px;width: 200px;float: left;}
 .regform .inputError {border-color: rgb(185,74,72);}
+.regform .form-group label {float: left;line-height: 32px;}
 .regform .tError {
     color: #b94a48;
     background-color: #f2dede;
@@ -278,4 +283,8 @@ input[type="checkbox"] {margin-right: 5px;vertical-align: middle;}
     background-color: #dff0d8;
     border-color: #d6e9c6;
 }
+.regform .notic-text {line-height: 32px;float: left;font-size: 14px;color: #ccc;}
+.regform .btn-register {padding: 0 15px;border:2px solid #ef4224;height: 36px;line-height: 32px;background-color: #ef4224;color: #fff;cursor: pointer;}
+.regform .btn-register:hover {background-color: #fff;color: #ef4224;}
+#veriCode img {height: 32px;cursor: pointer;margin-left: 10px;float: left;}
 #email_notice {display: inline-block;}

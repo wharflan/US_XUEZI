@@ -82,16 +82,17 @@
 
 .businessinfo .info-contact .item {font-size: 14px;}
 
-.answer-box {border-top: 1px dashed #ccc;}
+.answer-box {margin-top: 10px;background-color: #f2f2f2;}
 
 .m-answer {margin: 10px 0;}
 .m-answer .user-avatar {float: left;width: 60px;height: 60px;}
 .m-answer .user-avatar img {width: 100%;height: 100%;display: block;}
-.m-answer .main {margin-left: 70px;}
+.m-answer .main {margin-left: 70px;position: relative;}
 .m-answer .answer-info {font-size: 14px;color: #999;}
 .m-answer .answer-info .date {margin-right: 15px;}
 .m-answer .answer-info .c-comments {display: inline-block;margin-right: 15px;padding-left: 20px;background: url(../Images/comments.png) 0 center/16px 16px no-repeat;cursor: pointer;}
 .m-answer .answer-info .c-userful {margin-right: 5px;}
+.m-answer .star-rating {position: absolute;right: 10px;top: 5px;width: 190px;}
 
 .ans-comments {border: 1px solid #ccc;border-radius:4px;margin-top: 10px;display: none;}
 .ans-comments .comments-list {border-bottom: 1px solid #bbb;padding: 10px 10px 0;}
@@ -110,5 +111,5 @@
 .reply-box {overflow: hidden;margin-top: 10px;}
 .reply-box button   {float: right;margin-top: 5px;}
 
-.inp-textBlock {border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px;}
-.inp-textBlock textarea {width: 100%;display: block;height: 80px;border: 0 none;}
+.inp-textBlock {border: 1px solid #ccc;border-radius: 4px;padding: 5px 10px;background-color: #fff;}
+.inp-textBlock textarea {width: 100%;display: block;height: 80px;border: 0 none;outline: none;}

@@ -80,5 +80,77 @@
 
             <asp:Button ID="Button1" OnClick="Button1_Click" class="submit red_button floatright" runat="server" Text="注册" />
         </fieldset>
+        <div class="box02 reg-main">
+            <div class="box02-hd">注册新账户</div>
+            <div class="box02-bd">
+                <div class="regform">
+                    <div class="form-group">
+                        <label class="label" for="username">类型：</label>
+                        <label><input type="radio">个人用户</label>
+                        <label><input type="radio">商家/机构用户</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="eamil">注册邮箱：</label>
+                        <input type="email" class="inp" id="eamil" name="email">
+                        <div id="email_notice" class="notic"><span class="notic-text">*</span></div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label class="label" for="password">密码：</label>
+                        <input type="password" name="password" class="inp" id="password">
+                        <div id="password_notice" class="notic"><span class="notic-text">*</span></div>
+                    </div>
+                        
+                    <div class="form-group">
+                        <label class="label" for="conform_password">确认密码：</label>
+                        <input type="password" name="conform_password" class="inp" id="conform_password">
+                        <div id="conform_password_notice" class="notic"><span class="notic-text">*</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label" for="username">用户名：</label>
+                        <input type="text" class="inp" id="username" name="username" onblur="is_registered(this.value);">
+                        <div id="username_notice" class="notic"><span class="notic-text">*</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">机构类别：</label>
+                        <select class="select">
+                            <option value="车行Dealer">车行Dealer</option>
+                            <option value="餐饮商家">餐饮商家</option>
+                            <option value="本地商家">本地商家</option>
+                            <option value="地产经纪">地产经纪</option>
+                        </select>
+                        <div id="username_notice" class="notic"><span class="notic-text">*不同机构类别可获得对应的额外功能与权限</span></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">机构名称：</label>
+                        <input name="passwd_answer" type="text" class="inp"><span class="notic-text">&nbsp;*</span>
+                    </div>
+                    <div class="form-group">
+                        <label class="label">所在城市：</label>
+                        <select class="select">
+                            <option value="波士顿">波士顿</option>
+                            <option value="纽约">纽约</option>
+                            <option value="芝加哥">芝加哥</option>
+                            <option value="洛杉矶">洛杉矶</option>
+                            <option value="三藩市">三藩市</option>
+                        </select>
+                    </div>               
+                    <div class="form-group" id="veriCode">
+                        <label class="label" for="captcha">验证码：</label>
+                        <input type="text" name="captcha" class="inp inp-w1" id="captcha">
+                        <img src="UserControls/ValidateCode.aspx">
+                    </div>
+                    
+                    <div class="cbox">
+                        <input name="agreement" type="checkbox" value="1" checked="checked" id="agreement">
+                        <label for="agreement" class="agree">我已阅读并同意<a href="">《用户协议》</a></label>
+                    </div>
+                    
+                    <div class="submit">
+                        <input name="Submit" type="submit" value="立即注册" class="btn-register">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </asp:Content>
