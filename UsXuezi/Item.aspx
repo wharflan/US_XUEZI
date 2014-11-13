@@ -44,19 +44,6 @@
         <div class="rightblock">
             <div id="rentinfo" class="rentinfo sideblock">
                 <div id="basicinfo" class="basicinfo inner_sideblock">
-                    <div class="star-rating">
-                        <span>评分：</span>
-                        <div class="starbar">
-                            <ul class="current-rating" data-score="85">
-                                <li class="star5"></li>
-                                <li class="star4"></li>
-                                <li class="star3"></li>
-                                <li class="star2"></li>
-                                <li class="star1"></li>
-                            </ul>
-                        </div>
-                        <span class="score">9.5</span>
-                    </div>
                     <p>
                         <asp:Label ID="Label3" runat="server" Text="新旧程度："></asp:Label>
                     </p>

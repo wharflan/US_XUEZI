@@ -14,10 +14,10 @@
         <dl class="filter-tradeMode">
             <dt>交易方式：</dt>
             <dd>
-                <label class="m-ra"><input type="checkbox" name="filter-tradeMode"><span>面交</span></label>
-                <label class="m-ra"><input type="checkbox" name="filter-tradeMode"><span>邮寄</span></label>
-                <label class="m-ra"><input type="checkbox" name="filter-tradeMode"><span>自取</span></label>
-                <label class="m-ra"><input type="checkbox" name="filter-tradeMode"><span>送达</span></label>
+                <label class="m-cb"><input type="checkbox" name="filter-tradeMode"><span>面交</span></label>
+                <label class="m-cb"><input type="checkbox" name="filter-tradeMode"><span>邮寄</span></label>
+                <label class="m-cb"><input type="checkbox" name="filter-tradeMode"><span>自取</span></label>
+                <label class="m-cb"><input type="checkbox" name="filter-tradeMode"><span>送达</span></label>
             </dd>
         </dl>
         <span class="divide"></span>

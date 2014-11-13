@@ -365,10 +365,11 @@ ul li a {
 .filter-box dd {overflow: hidden;font-size: 0;}
 .filter-box dd * {font-size: 14px;}
 .filter-box .divide {float: left;width: 1px;height:10px;background-color: #bbb;margin-right: 10px;margin-top: 5px;}
-.filter-box .m-ra {float: left;;cursor: pointer;margin-right: 10px;color: #F05827;}
+.filter-box .m-ra, .filter-box .m-cb {float: left;cursor: pointer;margin-right: 10px;color: #F05827;line-height: 16px;}
 .filter-box .m-ra input {display: none;}
 .filter-box .m-ra input:checked + span {color: #333;}
 .filter-box .input-s {width: 120px;height: 20px;padding-left: 5px;line-height: 20px;}
+.filter-box .m-cb input {vertical-align: baseline;margin-right: 3px;}
 
 .btn-filter {float: right;}
 
@@ -377,7 +378,10 @@ ul li a {
 .rent-filter .filter-agent {float: left;width: 158px;}
 
 /* second hand */
-.sh-filter .filter-tradeMode {float: left;width: 222px;}
+.sh-filter .filter-tradeMode {float: left;width: 287px;}
+
+/* ep-filter */
+.ep-filter .filter-roomNum {float: left;width: 260px;}
 
 .sh-list {margin-left: -14px;}
 .sh-list li {float: left;width: 204px;height:280px;background-color: #f2f2f2;margin-left: 14px;margin-bottom: 15px;position: relative;}

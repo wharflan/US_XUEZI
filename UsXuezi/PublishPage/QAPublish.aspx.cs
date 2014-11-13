@@ -59,12 +59,12 @@ namespace UsXuezi.PublishPage
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            tagblock.Visible = true;
-            defaulttag.Visible = true;
-            if (editorblock.Visible)
-                editorblock.Visible = false;
-            else
-                editorblock.Visible = true;
+            //tagblock.Visible = true;
+            //defaulttag.Visible = true;
+            //if (editorblock.Visible)
+                //editorblock.Visible = false;
+            //else
+                //editorblock.Visible = true;
         }
 
         //publish

@@ -130,23 +130,23 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="thirdholder" CssClass="foodPublish-detial" runat="server">
 
-    <div class="main">
+    <div class="foodPublish-detial">
+        <div class="sub_heading">详细介绍你的服务，帮助用户加深了解，可有效提高到店率喔！<a href="#">参考其他商家</a></div>
         <div class="l-m">
-            <div class="sub_heading">详细介绍你的服务，帮助用户加深了解，可有效提高到店率喔！<a href="#">参考其他商家</a></div>
-
             <div class="editor top_20">
                 <BBS:Editor ID="Editor1" runat="server" Placeholder=" " />
             </div>
         </div>
         <div class="r-m">
             <div class="sub_heading">* 你还可以发布优惠券，吸引新顾客，留住老顾客</div>
-            <textarea rows="4"></textarea>
+            <textarea rows="6"></textarea>
             <asp:Button ID="Button4" runat="server" CssClass="border_button top_20" Text="上传现有优惠劵" />
+            <p class="tip">建议规格300 X 300</p>
         </div>
     </div>
 
     <!-- <asp:Button ID="Button5" runat="server" CssClass="border_button floatleft top_20 right_5 " Text="设计新的优惠劵" /> -->
-    <div class="c-float">
+    <div class="c-float fr">
         <input type="button" name="previous" class="previous big_border_button floatleft top_15 left_80" value="上一步" />
         <asp:Button ID="Button6" runat="server" class="red_button floatleft left_5" Text="预览" OnClientClick="GetContents()" OnClick="Button6_Click" />
         <asp:Button ID="Button3" runat="server" class="red_button floatleft left_5" Text="发布" OnClientClick="GetContents()" OnClick="Button3_Click" />

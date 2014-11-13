@@ -6,13 +6,14 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentHolder" runat="server">
     <div class="msform top_50">
-        <fieldset>
-            <div>
+        <fieldset class="box01">
+            <div class="box01-hd">吹水吐槽</div>
+            <div class="box01-bd">
                 <div style="width: 642px;margin:20px 40px 0;">
                     <asp:Label ID="Label2" runat="server" class="sub_heading" Style="text-align: left;" Text="标题"></asp:Label>
                     <asp:TextBox ID="TextBox2" runat="server" Style="width: 545px; padding: 5px; font-size: 16px;" placeholder="如“西岸读UI/US设计哪个学校比较好？”"></asp:TextBox>
                 </div>
-                <div class="editor top_20">
+                <div class="editor top_20" style="margin-left:77px;">
                             <BBS:Editor ID="Editor1" runat="server" Placeholder=" " />
                         </div>
                 <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Conditional" ChildrenAsTriggers="False">
@@ -34,7 +35,7 @@
                 </asp:UpdatePanel>
 
             </div>
-            <div class="item-row" style="float:left;">
+            <div class="item-row" style="float:left;margin-left:10px;">
                 <span class="label" style="">自定义标签: </span>
                 <div class="cont">
                     <input style="width: 250px; padding: 3px; font-size: 16px; height: 20px;margin-right: 5px;" plcaeholder="请在20字以内" type="text"><input name="ctl00$ContentHolder$Button5" value="确定" id="ContentHolder_Button5" class="border_button" type="submit">
